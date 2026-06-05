@@ -10,10 +10,15 @@ exports.handler = async (event) => {
     return { statusCode: 400, body: 'Invalid JSON' };
   }
 
-  const { apiKey, payload } = body;
+  const { payload } = body;
 
-  if (!apiKey || !payload) {
-    return { statusCode: 400, body: 'Missing apiKey or payload' };
+  if (!payload) {
+    return { statusCode: 400, body: 'Missing payload' };
+  }
+
+  const apiKey = process.env.ANTHROPIC_API_KEY;
+  if (!apiKey) {
+    return { statusCode: 500, body: 'ANTHROPIC_API_KEY not configured' };
   }
 
   const response = await fetch('https://api.anthropic.com/v1/messages', {

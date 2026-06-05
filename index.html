@@ -116,11 +116,6 @@
 </div>
 
 <div class="main">
-  <div class="api-key-bar">
-    <label>Anthropic API Key</label>
-    <input type="password" id="apiKey" placeholder="sk-ant-..." />
-  </div>
-
   <div class="form-card">
     <h2>Client Intake Form</h2>
     <p class="subtitle">Fill in the client details below to generate ad creative briefs one at a time.</p>
@@ -294,14 +289,10 @@ const ANGLE_SEQUENCE = [
 ];
 
 let currentFields = null;
-let currentApiKey = null;
 let currentBriefIndex = 0;
 let allBriefs = [];
 
 function startBriefs() {
-  const apiKey = document.getElementById('apiKey').value.trim();
-  if (!apiKey) { alert('Please enter your Anthropic API key.'); return; }
-
   const fields = {
     businessName: document.getElementById('businessName').value.trim(),
     industry: document.getElementById('industry').value.trim(),
@@ -321,7 +312,6 @@ function startBriefs() {
   if (missing.length) { alert('Please fill in: ' + missing.join(', ')); return; }
 
   currentFields = fields;
-  currentApiKey = apiKey;
   currentBriefIndex = 0;
   allBriefs = [];
 
@@ -373,7 +363,6 @@ Follow the IA framework strictly. Return only the JSON array containing 1 brief 
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        apiKey: currentApiKey,
         payload: {
           model: 'claude-sonnet-4-5',
           max_tokens: 2000,
@@ -410,6 +399,17 @@ Follow the IA framework strictly. Return only the JSON array containing 1 brief 
     if (loadingEl) loadingEl.replaceWith(briefEl.firstElementChild);
 
     currentBriefIndex++;
+
+    // Silently save to Notion (fire and forget)
+    fetch('/.netlify/functions/save-brief', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        brief,
+        clientName: currentFields.businessName,
+        industry: currentFields.industry
+      })
+    }).catch(() => {}); // fail silently
 
     // Update copy buttons data
     window.briefsData = allBriefs.map(b => ({
