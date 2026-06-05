@@ -123,7 +123,7 @@
 
   <div class="form-card">
     <h2>Client Intake Form</h2>
-    <p class="subtitle">Fill in the client details below to generate 5–8 ad creative briefs.</p>
+    <p class="subtitle">Fill in the client details below to generate 3 ad creative briefs.</p>
     
     <div class="form-grid">
       <div class="form-group">
@@ -199,7 +199,7 @@ ${KNOWLEDGE_BASE}
 === END DOCUMENTATION ===
 
 RULES:
-1. Generate exactly 6 ad creative briefs
+1. Generate exactly 3 ad creative briefs
 2. Cover all 5 angle types across the 6 briefs: Pain, Benefit, Objection Handling, Challenge, Identity (one angle type may appear twice if justified)
 3. Each brief must use a different narrative framework (cycle through: Problem-Solution, Before-After-Bridge, Myth-Truth)
 4. Hooks must be exactly 2 sentences: Sentence 1 = Clarity (Subject + Action + Outcome), Sentence 2 = Curiosity/Contrast
@@ -208,7 +208,7 @@ RULES:
 7. CTAs must be direct and friction-free (Learn More for lead gen / Book Now for appointment-based)
 8. Higgsfield image prompts must be detailed, cinematic, and specific to the angle
 
-OUTPUT FORMAT — return a JSON array of 6 brief objects. Each object must have these exact keys:
+OUTPUT FORMAT — return a JSON array of 3 brief objects. Each object must have these exact keys:
 {
   "briefNumber": 1,
   "angleType": "Pain" | "Benefit" | "Objection" | "Challenge" | "Identity",
@@ -399,9 +399,9 @@ async function generateBriefs() {
   const out = document.getElementById('output');
   btn.disabled = true;
   btn.textContent = 'Generating...';
-  out.innerHTML = `<div class="loading"><div class="loading-spinner"></div><p>Generating 6 creative briefs using the IA framework...</p><p style="margin-top:8px;font-size:12px;color:#444;">This takes 30-60 seconds</p></div>`;
+  out.innerHTML = `<div class="loading"><div class="loading-spinner"></div><p>Generating 3 creative briefs using the IA framework...</p><p style="margin-top:8px;font-size:12px;color:#444;">This takes 30-60 seconds</p></div>`;
 
-  const userMessage = `Generate 6 Meta ad creative briefs for the following client:
+  const userMessage = `Generate 3 Meta ad creative briefs for the following client:
 
 Business Name: ${fields.businessName}
 Industry / Niche: ${fields.industry}
