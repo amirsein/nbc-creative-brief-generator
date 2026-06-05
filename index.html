@@ -13,58 +13,89 @@
   .header h1 { font-size: 18px; font-weight: 600; color: #fff; }
   .header span { font-size: 13px; color: #666; margin-left: 8px; }
 
-  .main { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
-  
-  /* API Key section */
-  .api-key-bar { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; padding: 16px 20px; margin-bottom: 28px; display: flex; align-items: center; gap: 12px; }
-  .api-key-bar label { font-size: 13px; color: #888; white-space: nowrap; }
-  .api-key-bar input { flex: 1; background: #0f0f0f; border: 1px solid #333; border-radius: 6px; padding: 8px 12px; color: #e8e8e8; font-size: 13px; font-family: monospace; }
-  .api-key-bar input:focus { outline: none; border-color: #2563eb; }
+  /* ── Layout ── */
+  .app-body { display: flex; height: calc(100vh - 61px); overflow: hidden; }
+  .left-panel { width: 320px; min-width: 320px; background: #111; border-right: 1px solid #2a2a2a; display: flex; flex-direction: column; overflow-y: auto; }
+  .left-panel-inner { padding: 20px; flex: 1; }
+  .right-panel { flex: 1; overflow-y: auto; padding: 24px 28px; background: #0f0f0f; }
 
-  /* Form */
-  .form-card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 12px; padding: 28px; margin-bottom: 28px; }
-  .form-card h2 { font-size: 16px; font-weight: 600; color: #fff; margin-bottom: 4px; }
-  .form-card .subtitle { font-size: 13px; color: #666; margin-bottom: 24px; }
-  
-  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .form-group { display: flex; flex-direction: column; gap: 6px; }
-  .form-group.full { grid-column: 1 / -1; }
-  .form-group label { font-size: 12px; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.05em; }
+  /* ── Form ── */
+  .form-title { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 2px; }
+  .form-subtitle { font-size: 12px; color: #555; margin-bottom: 20px; }
+  .form-grid { display: flex; flex-direction: column; gap: 12px; }
+  .form-group { display: flex; flex-direction: column; gap: 5px; }
+  .form-group label { font-size: 10px; font-weight: 700; color: #666; text-transform: uppercase; letter-spacing: 0.06em; }
   .form-group input, .form-group textarea, .form-group select {
-    background: #0f0f0f; border: 1px solid #2a2a2a; border-radius: 8px;
-    padding: 10px 14px; color: #e8e8e8; font-size: 14px; font-family: inherit;
-    transition: border-color 0.15s;
+    background: #0f0f0f; border: 1px solid #2a2a2a; border-radius: 6px;
+    padding: 8px 10px; color: #e8e8e8; font-size: 13px; font-family: inherit;
+    transition: border-color 0.15s; width: 100%;
   }
   .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: #2563eb; }
-  .form-group textarea { resize: vertical; min-height: 80px; }
-  .form-group .hint { font-size: 11px; color: #555; }
-
+  .form-group textarea { resize: vertical; min-height: 60px; }
   .generate-btn {
-    width: 100%; padding: 14px; background: #2563eb; color: white; border: none;
-    border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; margin-top: 20px;
+    width: 100%; padding: 12px; background: #2563eb; color: white; border: none;
+    border-radius: 7px; font-size: 14px; font-weight: 600; cursor: pointer; margin-top: 16px;
     transition: background 0.15s;
   }
   .generate-btn:hover:not(:disabled) { background: #1d4ed8; }
   .generate-btn:disabled { background: #1e3a7a; color: #4a6fa5; cursor: not-allowed; }
 
-  /* Loading */
-  .loading { text-align: center; padding: 60px 20px; }
-  .loading-spinner { width: 40px; height: 40px; border: 3px solid #2a2a2a; border-top-color: #2563eb; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .loading p { color: #666; font-size: 14px; }
+  /* ── Right panel empty state ── */
+  .empty-state { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: #333; text-align: center; gap: 12px; }
+  .empty-state svg { opacity: 0.2; }
+  .empty-state p { font-size: 14px; }
 
-  /* Error */
-  .error { background: #1a0f0f; border: 1px solid #5c1f1f; border-radius: 10px; padding: 16px 20px; margin-bottom: 24px; color: #f87171; font-size: 14px; }
+  /* ── Company section ── */
+  .company-section { margin-bottom: 32px; }
+  .company-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #2a2a2a; }
+  .company-name { font-size: 16px; font-weight: 700; color: #fff; }
+  .company-meta { font-size: 12px; color: #555; margin-top: 2px; }
+  .company-count { font-size: 11px; color: #555; background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 20px; padding: 3px 10px; }
+  .company-generate-btn { background: #1a2a1a; color: #4ade80; border: 1px solid #2a4a2a; border-radius: 6px; padding: 7px 14px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+  .company-generate-btn:hover:not(:disabled) { background: #243424; }
+  .company-generate-btn:disabled { opacity: 0.4; cursor: not-allowed; }
 
-  /* Brief cards */
-  .briefs-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
-  .briefs-header h2 { font-size: 20px; font-weight: 700; color: #fff; }
-  .briefs-header span { font-size: 13px; color: #666; }
+  /* ── Brief mini card (collapsed) ── */
+  .brief-mini { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; margin-bottom: 10px; overflow: hidden; transition: border-color 0.15s; }
+  .brief-mini:hover { border-color: #3a3a3a; }
+  .brief-mini-header { display: flex; align-items: center; gap: 10px; padding: 12px 16px; cursor: pointer; user-select: none; }
+  .brief-mini-num { font-size: 11px; color: #555; font-weight: 700; min-width: 24px; }
+  .brief-mini-hook { flex: 1; font-size: 13px; color: #ccc; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .brief-mini-chevron { font-size: 11px; color: #444; transition: transform 0.2s; }
+  .brief-mini.open .brief-mini-chevron { transform: rotate(180deg); }
+  .brief-mini-higgsfield { padding: 0 16px 10px; font-size: 11px; color: #555; line-height: 1.5; display: none; font-style: italic; }
+  .brief-mini:not(.open) .brief-mini-higgsfield { display: block; }
 
-  .brief-card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 12px; margin-bottom: 20px; overflow: hidden; }
-  .brief-header { background: #111; border-bottom: 1px solid #2a2a2a; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; }
-  .brief-header h3 { font-size: 14px; font-weight: 700; color: #fff; }
-  .brief-badge { font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 600; }
+  /* ── Full brief (expanded) ── */
+  .brief-full { border-top: 1px solid #222; padding: 16px; display: none; }
+  .brief-mini.open .brief-full { display: block; }
+  .brief-section { margin-bottom: 16px; }
+  .brief-section:last-child { margin-bottom: 0; }
+  .section-label { font-size: 10px; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
+  .framework-tag { display: inline-block; background: #1e2a3b; color: #60a5fa; border: 1px solid #2a3f5c; border-radius: 4px; font-size: 11px; font-weight: 600; padding: 2px 8px; }
+  .hook-text { font-size: 14px; color: #fff; line-height: 1.5; font-weight: 500; }
+  .hook-s1 { color: #e8e8e8; }
+  .hook-s2 { color: #93c5fd; }
+  .copy-block { background: #0f0f0f; border: 1px solid #1a1a1a; border-radius: 7px; padding: 12px; }
+  .copy-row { margin-bottom: 10px; }
+  .copy-row:last-child { margin-bottom: 0; }
+  .copy-row-label { font-size: 10px; color: #555; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 3px; }
+  .copy-row-text { font-size: 12px; color: #ccc; line-height: 1.5; }
+  .static-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .static-item { background: #0f0f0f; border: 1px solid #1a1a1a; border-radius: 7px; padding: 10px; }
+  .static-item-label { font-size: 9px; color: #555; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 5px; }
+  .static-item-text { font-size: 12px; color: #ccc; line-height: 1.4; }
+  .higgsfield-box { background: #0a0f1a; border: 1px solid #1e3a5c; border-radius: 7px; padding: 12px; }
+  .higgsfield-text { font-size: 12px; color: #93c5fd; line-height: 1.5; }
+  .brief-actions { display: flex; gap: 8px; margin-top: 14px; padding-top: 14px; border-top: 1px solid #1a1a1a; }
+  .btn-copy { background: #1e2a1e; color: #4ade80; border: 1px solid #2a4a2a; border-radius: 5px; padding: 6px 12px; font-size: 11px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+  .btn-copy:hover { background: #2a3a2a; }
+  .btn-copy-prompt { background: #1e2a3b; color: #60a5fa; border: 1px solid #2a3f5c; border-radius: 5px; padding: 6px 12px; font-size: 11px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+  .btn-copy-prompt:hover { background: #243050; }
+  .copied { background: #0d1f0d !important; color: #86efac !important; }
+
+  /* ── Badges ── */
+  .brief-badge { font-size: 10px; padding: 2px 8px; border-radius: 20px; font-weight: 700; white-space: nowrap; }
   .badge-pain { background: #3b1f1f; color: #f87171; }
   .badge-benefit { background: #1a3b1f; color: #4ade80; }
   .badge-objection { background: #3b2a1f; color: #fb923c; }
@@ -72,38 +103,12 @@
   .badge-identity { background: #2a1f3b; color: #c084fc; }
   .badge-default { background: #2a2a2a; color: #888; }
 
-  .brief-body { padding: 20px; }
-  .brief-section { margin-bottom: 20px; }
-  .brief-section:last-child { margin-bottom: 0; }
-  .section-label { font-size: 11px; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
-  .framework-tag { display: inline-block; background: #1e2a3b; color: #60a5fa; border: 1px solid #2a3f5c; border-radius: 4px; font-size: 12px; font-weight: 600; padding: 3px 10px; }
-
-  .hook-text { font-size: 16px; color: #fff; line-height: 1.5; font-weight: 500; }
-  .hook-s1 { color: #e8e8e8; }
-  .hook-s2 { color: #93c5fd; }
-
-  .copy-block { background: #0f0f0f; border: 1px solid #222; border-radius: 8px; padding: 14px; }
-  .copy-row { margin-bottom: 14px; }
-  .copy-row:last-child { margin-bottom: 0; }
-  .copy-row-label { font-size: 11px; color: #555; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
-  .copy-row-text { font-size: 13px; color: #ccc; line-height: 1.6; }
-
-  .static-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-  .static-item { background: #0f0f0f; border: 1px solid #222; border-radius: 8px; padding: 12px; }
-  .static-item-label { font-size: 10px; color: #555; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
-  .static-item-text { font-size: 13px; color: #ccc; line-height: 1.5; }
-  .headlines { grid-column: 1 / -1; }
-
-  .higgsfield-box { background: #0a0f1a; border: 1px solid #1e3a5c; border-radius: 8px; padding: 14px; }
-  .higgsfield-text { font-size: 13px; color: #93c5fd; line-height: 1.6; }
-
-  .brief-actions { display: flex; gap: 10px; margin-top: 20px; padding-top: 20px; border-top: 1px solid #222; }
-  .btn-copy { background: #1e2a1e; color: #4ade80; border: 1px solid #2a4a2a; border-radius: 6px; padding: 8px 16px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
-  .btn-copy:hover { background: #2a3a2a; }
-  .btn-copy-prompt { background: #1e2a3b; color: #60a5fa; border: 1px solid #2a3f5c; border-radius: 6px; padding: 8px 16px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
-  .btn-copy-prompt:hover { background: #243050; }
-  .copied { background: #0d1f0d !important; color: #86efac !important; }
-
+  /* ── Loading / Error ── */
+  .loading { text-align: center; padding: 30px 20px; }
+  .loading-spinner { width: 28px; height: 28px; border: 2px solid #2a2a2a; border-top-color: #2563eb; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 12px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loading p { color: #555; font-size: 13px; }
+  .error { background: #1a0f0f; border: 1px solid #5c1f1f; border-radius: 8px; padding: 12px 16px; color: #f87171; font-size: 13px; margin-bottom: 12px; }
   .divider { border: none; border-top: 1px solid #2a2a2a; margin: 8px 0 16px; }
 </style>
 </head>
@@ -115,87 +120,81 @@
   <span>Powered by Imperium Acquisition Framework</span>
 </div>
 
-<div class="main">
-  <div class="form-card">
-    <h2>Client Intake Form</h2>
-    <p class="subtitle">Fill in the client details below to generate ad creative briefs one at a time.</p>
-    
-    <div class="form-grid">
-      <div class="form-group">
-        <label>Business Name</label>
-        <input type="text" id="businessName" placeholder="e.g. Glow Med Spa" />
-      </div>
-      <div class="form-group">
-        <label>Industry / Niche</label>
-        <input type="text" id="industry" placeholder="e.g. Med Spa" />
-      </div>
-      <div class="form-group">
-        <label>Location</label>
-        <input type="text" id="location" placeholder="e.g. Austin, TX" />
-      </div>
-      <div class="form-group">
-        <label>What They Sell</label>
-        <input type="text" id="service" placeholder="e.g. Botox & lip filler" />
-      </div>
-      <div class="form-group full">
-        <label>The Result Clients Get</label>
-        <input type="text" id="result" placeholder="e.g. Look 5-10 years younger, naturally refreshed without looking 'done'" />
-      </div>
-      <div class="form-group full">
-        <label>Social Proof</label>
-        <textarea id="socialProof" placeholder="Real numbers, names, timeframes, results. e.g. 'Sarah, 42 — got Botox in 45 min, said she looked 8 years younger. 200+ clients in 6 months.'"></textarea>
-      </div>
-      <div class="form-group full">
-        <label>USPs / Differentiators</label>
-        <textarea id="usps" placeholder="What makes this business different? e.g. Board-certified injectors only, same-day appointments, natural results guarantee"></textarea>
-      </div>
-      <div class="form-group full">
-        <label>Customer Pain Points (in their words)</label>
-        <textarea id="painPoints" placeholder="How do frustrated customers describe their problem? Use their exact language if possible. e.g. 'I feel invisible', 'I look tired even when I'm not', 'I hate how old I look in photos'"></textarea>
-      </div>
-      <div class="form-group full">
-        <label>Objections They Hear</label>
-        <textarea id="objections" placeholder="Common reasons people don't book. e.g. 'It'll look fake', 'Too expensive', 'What if it goes wrong', 'I don't have time for recovery'"></textarea>
-      </div>
-      <div class="form-group full">
-        <label>Audience Description</label>
-        <textarea id="audience" placeholder="Who is the ideal customer? e.g. Women 35-55, professional, active on social media, already spend on self-care, want to look as young as they feel"></textarea>
-      </div>
-      <div class="form-group">
-        <label>Tone Preference (optional)</label>
-        <select id="tone">
-          <option value="">— Select tone —</option>
-          <option value="professional">Professional</option>
-          <option value="casual">Casual / Conversational</option>
-          <option value="direct">Direct / No-fluff</option>
-          <option value="educational">Educational / Informative</option>
-          <option value="empowering">Empowering / Uplifting</option>
-        </select>
-      </div>
-    </div>
+<div class="app-body">
 
-    <button class="generate-btn" id="generateBtn" onclick="startBriefs()">
-      Generate Creative Briefs →
-    </button>
+  <!-- Left: Intake Form -->
+  <div class="left-panel">
+    <div class="left-panel-inner">
+      <p class="form-title">Client Intake</p>
+      <p class="form-subtitle">Fill in details and generate briefs</p>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Business Name</label>
+          <input type="text" id="businessName" placeholder="Glow Med Spa" />
+        </div>
+        <div class="form-group">
+          <label>Industry / Niche</label>
+          <input type="text" id="industry" placeholder="Med Spa" />
+        </div>
+        <div class="form-group">
+          <label>Location</label>
+          <input type="text" id="location" placeholder="Austin, TX" />
+        </div>
+        <div class="form-group">
+          <label>What They Sell</label>
+          <input type="text" id="service" placeholder="Botox & lip filler" />
+        </div>
+        <div class="form-group">
+          <label>The Result Clients Get</label>
+          <input type="text" id="result" placeholder="Look 5-10 years younger" />
+        </div>
+        <div class="form-group">
+          <label>Social Proof</label>
+          <textarea id="socialProof" placeholder="Real numbers, names, results..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>USPs / Differentiators</label>
+          <textarea id="usps" placeholder="What makes them different?"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Customer Pain (in their words)</label>
+          <textarea id="painPoints" placeholder="'I feel invisible', 'I look tired even when I'm not'..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Objections They Hear</label>
+          <textarea id="objections" placeholder="'Too expensive', 'What if it looks fake'..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Audience Description</label>
+          <textarea id="audience" placeholder="Women 35-55, professional, active on social..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Tone (optional)</label>
+          <select id="tone">
+            <option value="">— Default —</option>
+            <option value="professional">Professional</option>
+            <option value="casual">Casual / Conversational</option>
+            <option value="direct">Direct / No-fluff</option>
+            <option value="educational">Educational</option>
+            <option value="empowering">Empowering</option>
+          </select>
+        </div>
+      </div>
+      <button class="generate-btn" id="generateBtn" onclick="startBriefs()">
+        Generate First Brief →
+      </button>
+    </div>
   </div>
 
-  <div id="output"></div>
-
-  <button class="generate-btn" id="moreBriefBtn" onclick="generateNextBrief()" style="display:none; margin-bottom:28px;">
-    Generate Another Brief →
-  </button>
-
-  <!-- Previous Briefs -->
-  <div id="history-section" style="margin-top:40px;">
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
-      <h2 style="font-size:18px;font-weight:700;color:#fff;">Saved Briefs</h2>
-      <div style="display:flex;gap:8px;align-items:center;">
-        <input type="text" id="clientFilter" placeholder="Filter by client..." style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:6px;padding:7px 12px;color:#e8e8e8;font-size:13px;width:200px;" oninput="filterBriefs(this.value)" />
-        <button onclick="loadSavedBriefs()" style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:6px;padding:7px 14px;color:#888;font-size:13px;cursor:pointer;">↻ Refresh</button>
-      </div>
+  <!-- Right: Company Sections -->
+  <div class="right-panel" id="rightPanel">
+    <div class="empty-state" id="emptyState">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+      <p>Fill in the intake form and hit<br><strong style="color:#555">Generate First Brief →</strong></p>
     </div>
-    <div id="history-output"><div style="color:#444;font-size:13px;">Loading saved briefs...</div></div>
+    <div id="companiesContainer"></div>
   </div>
+
 </div>
 
 <script>
@@ -304,9 +303,11 @@ const ANGLE_SEQUENCE = [
   { angleType: 'Identity',   narrativeFramework: 'Before-After-Bridge' },
 ];
 
-let currentFields = null;
-let currentBriefIndex = 0;
-let allBriefs = [];
+// Company state: keyed by businessName
+// { [name]: { fields, briefIndex, briefs: [] } }
+const companiesState = {};
+
+// ── Generate flow ────────────────────────────────────────────────────────────
 
 function startBriefs() {
   const fields = {
@@ -322,38 +323,46 @@ function startBriefs() {
     audience: document.getElementById('audience').value.trim(),
     tone: document.getElementById('tone').value,
   };
-
   const required = ['businessName', 'industry', 'service', 'result', 'painPoints', 'audience'];
   const missing = required.filter(f => !fields[f]);
   if (missing.length) { alert('Please fill in: ' + missing.join(', ')); return; }
 
-  currentFields = fields;
-  currentBriefIndex = 0;
-  allBriefs = [];
+  const name = fields.businessName;
 
-  document.getElementById('output').innerHTML = '';
-  document.getElementById('moreBriefBtn').style.display = 'none';
-  generateNextBrief();
+  // Create company state if new
+  if (!companiesState[name]) {
+    companiesState[name] = { fields, briefIndex: 0, briefs: [] };
+    ensureCompanySection(name, fields);
+  } else {
+    // Update fields in case they changed
+    companiesState[name].fields = fields;
+  }
+
+  generateNextBriefForCompany(name);
 }
 
-async function generateNextBrief() {
-  const btn = document.getElementById('generateBtn');
-  const moreBtn = document.getElementById('moreBriefBtn');
-  const out = document.getElementById('output');
+async function generateNextBriefForCompany(name) {
+  const state = companiesState[name];
+  if (!state) return;
 
-  const angle = ANGLE_SEQUENCE[currentBriefIndex % ANGLE_SEQUENCE.length];
-  const briefNum = currentBriefIndex + 1;
+  const { fields } = state;
+  const angle = ANGLE_SEQUENCE[state.briefIndex % ANGLE_SEQUENCE.length];
+  const briefNum = state.briefIndex + 1;
 
-  // Show loading card
-  const loadingId = `loading-${briefNum}`;
+  const genBtn = document.getElementById(`gen-btn-${slugify(name)}`);
+  const mainBtn = document.getElementById('generateBtn');
+  if (genBtn) { genBtn.disabled = true; genBtn.textContent = 'Generating...'; }
+  if (mainBtn) { mainBtn.disabled = true; mainBtn.textContent = 'Generating...'; }
+
+  // Show loading card in company section
+  const cardsEl = document.getElementById(`cards-${slugify(name)}`);
+  const loadingId = `loading-${slugify(name)}-${briefNum}`;
   const loadingDiv = document.createElement('div');
   loadingDiv.id = loadingId;
   loadingDiv.className = 'loading';
+  loadingDiv.style.padding = '20px';
   loadingDiv.innerHTML = `<div class="loading-spinner"></div><p>Generating Brief #${briefNum} — ${angle.angleType} angle...</p>`;
-  out.appendChild(loadingDiv);
-
-  if (btn) { btn.disabled = true; btn.textContent = 'Generating...'; }
-  if (moreBtn) moreBtn.style.display = 'none';
+  if (cardsEl) cardsEl.appendChild(loadingDiv);
 
   const userMessage = `Generate 1 Meta ad creative brief for the following client.
 
@@ -361,17 +370,17 @@ Angle Type: ${angle.angleType}
 Narrative Framework: ${angle.narrativeFramework}
 Brief Number: ${briefNum}
 
-Business Name: ${currentFields.businessName}
-Industry / Niche: ${currentFields.industry}
-Location: ${currentFields.location}
-What They Sell: ${currentFields.service}
-The Result Clients Get: ${currentFields.result}
-Social Proof: ${currentFields.socialProof || 'Not provided — do not invent specific names or numbers'}
-USPs / Differentiators: ${currentFields.usps || 'Not provided'}
-Customer Pain Points (in their words): ${currentFields.painPoints}
-Objections They Hear: ${currentFields.objections || 'Not provided'}
-Audience Description: ${currentFields.audience}
-Tone Preference: ${currentFields.tone || 'Not specified — use professional-casual'}
+Business Name: ${fields.businessName}
+Industry / Niche: ${fields.industry}
+Location: ${fields.location}
+What They Sell: ${fields.service}
+The Result Clients Get: ${fields.result}
+Social Proof: ${fields.socialProof || 'Not provided — do not invent specific names or numbers'}
+USPs / Differentiators: ${fields.usps || 'Not provided'}
+Customer Pain Points (in their words): ${fields.painPoints}
+Objections They Hear: ${fields.objections || 'Not provided'}
+Audience Description: ${fields.audience}
+Tone Preference: ${fields.tone || 'Not specified — use professional-casual'}
 
 Follow the IA framework strictly. Return only the JSON array containing 1 brief object.`;
 
@@ -388,15 +397,12 @@ Follow the IA framework strictly. Return only the JSON array containing 1 brief 
         }
       })
     });
-
     if (!response.ok) {
       const err = await response.json().catch(() => ({}));
       throw new Error(err.error?.message || `API error ${response.status}`);
     }
-
     const data = await response.json();
     const rawText = data.content[0].text.trim();
-
     let briefs;
     try {
       const jsonStr = rawText.startsWith('[') ? rawText : rawText.replace(/^```json?\n?/, '').replace(/\n?```$/, '');
@@ -407,44 +413,29 @@ Follow the IA framework strictly. Return only the JSON array containing 1 brief 
 
     const brief = briefs[0];
     brief.briefNumber = briefNum;
-    allBriefs.push(brief);
+    state.briefs.push(brief);
+    state.briefIndex++;
 
-    // Replace loading div with rendered brief
+    // Replace loading with mini card
+    const briefKey = `${slugify(name)}-${briefNum}`;
     const loadingEl = document.getElementById(loadingId);
-    const briefEl = document.createElement('div');
-    briefEl.innerHTML = renderSingleBrief(brief, allBriefs.length - 1);
-    if (loadingEl) loadingEl.replaceWith(briefEl.firstElementChild);
+    const miniEl = document.createElement('div');
+    miniEl.innerHTML = renderBriefMini(brief, briefKey);
+    if (loadingEl) loadingEl.replaceWith(miniEl.firstElementChild);
 
-    currentBriefIndex++;
+    // Update count badge
+    const countEl = document.getElementById(`count-${slugify(name)}`);
+    if (countEl) countEl.textContent = `${state.briefs.length} brief${state.briefs.length > 1 ? 's' : ''}`;
 
-    // Silently save to Notion, then refresh saved briefs list
+    // Hide empty state
+    document.getElementById('emptyState').style.display = 'none';
+
+    // Save to Notion silently
     fetch('/.netlify/functions/save-brief', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        brief,
-        clientName: currentFields.businessName,
-        industry: currentFields.industry
-      })
-    }).then(() => loadSavedBriefs()).catch(() => {}); // fail silently
-
-    // Update copy buttons data
-    window.briefsData = allBriefs.map(b => ({
-      fullText: buildBriefText(b),
-      higgsfieldText: b.higgsfieldPrompt
-    }));
-
-    // Show briefs header if first brief
-    if (currentBriefIndex === 1) {
-      const header = document.createElement('div');
-      header.id = 'briefs-header';
-      header.className = 'briefs-header';
-      out.prepend(header);
-    }
-    document.getElementById('briefs-header').innerHTML = `<h2>Generated Briefs</h2><span>${allBriefs.length} brief${allBriefs.length > 1 ? 's' : ''} · ${new Date().toLocaleTimeString()}</span>`;
-
-    // Show "Generate Another" button
-    showMoreButton();
+      body: JSON.stringify({ brief, clientName: fields.businessName, industry: fields.industry })
+    }).catch(() => {});
 
   } catch (err) {
     const loadingEl = document.getElementById(loadingId);
@@ -453,150 +444,162 @@ Follow the IA framework strictly. Return only the JSON array containing 1 brief 
     errDiv.innerHTML = `<strong>Error:</strong> ${escapeHtml(err.message)}`;
     if (loadingEl) loadingEl.replaceWith(errDiv);
   } finally {
-    if (btn) { btn.disabled = false; btn.textContent = 'Generate Creative Briefs →'; }
+    if (genBtn) { genBtn.disabled = false; genBtn.textContent = 'Generate Next Brief →'; }
+    if (mainBtn) { mainBtn.disabled = false; mainBtn.textContent = 'Generate First Brief →'; }
   }
 }
 
-function showMoreButton() {
-  const moreBtn = document.getElementById('moreBriefBtn');
-  if (moreBtn) moreBtn.style.display = 'block';
+// ── Company section ───────────────────────────────────────────────────────────
+
+function slugify(name) {
+  return name.toLowerCase().replace(/[^a-z0-9]/g, '-');
 }
 
-function renderSingleBrief(b, idx) {
+function ensureCompanySection(name, fields) {
+  const container = document.getElementById('companiesContainer');
+  const slug = slugify(name);
+  if (document.getElementById(`company-${slug}`)) return; // already exists
+
+  const section = document.createElement('div');
+  section.className = 'company-section';
+  section.id = `company-${slug}`;
+  section.innerHTML = `
+    <div class="company-header">
+      <div>
+        <div class="company-name">${escapeHtml(name)}</div>
+        <div class="company-meta">${escapeHtml(fields.industry)}${fields.location ? ' · ' + escapeHtml(fields.location) : ''}</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span class="company-count" id="count-${slug}">0 briefs</span>
+        <button class="company-generate-btn" id="gen-btn-${slug}" onclick="generateNextBriefForCompany('${name.replace(/'/g, "\\'")}')">
+          Generate Next Brief →
+        </button>
+      </div>
+    </div>
+    <div id="cards-${slug}"></div>
+  `;
+  container.prepend(section); // newest company on top
+}
+
+// ── Brief mini card ───────────────────────────────────────────────────────────
+
+function renderBriefMini(b, key) {
+  window.__briefCache__ = window.__briefCache__ || {};
+  window.__briefCache__[key] = { fullText: buildBriefText(b), higgsfieldText: b.higgsfieldPrompt || '' };
   const badgeClass = getBadgeClass(b.angleType);
+  const hook1 = escapeHtml(b.hook?.sentence1 || '');
+  const higgsfieldPreview = escapeHtml((b.higgsfieldPrompt || '').slice(0, 120)) + '…';
+  const fullHtml = renderBriefFull(b, key);
+
   return `
-  <div class="brief-card">
-    <div class="brief-header">
-      <h3>Brief #${b.briefNumber} — ${escapeHtml(b.angleDescription)}</h3>
+  <div class="brief-mini" id="mini-${key}">
+    <div class="brief-mini-header" onclick="toggleBriefMini('${key}')">
+      <span class="brief-mini-num">#${b.briefNumber}</span>
       <span class="brief-badge ${badgeClass}">${escapeHtml(b.angleType)}</span>
+      <span class="brief-mini-hook">${hook1}</span>
+      <span class="brief-mini-chevron">▼</span>
     </div>
-    <div class="brief-body">
-      <div class="brief-section">
-        <div class="section-label">Narrative Framework</div>
-        <span class="framework-tag">${escapeHtml(b.narrativeFramework)}</span>
-      </div>
-      <div class="brief-section">
-        <div class="section-label">Hook</div>
-        <p class="hook-text">
-          <span class="hook-s1">${escapeHtml(b.hook.sentence1)}</span><br>
-          <span class="hook-s2">${escapeHtml(b.hook.sentence2)}</span>
-        </p>
-      </div>
-      <div class="brief-section">
-        <div class="section-label">Full Ad Copy</div>
-        <div class="copy-block">
-          <div class="copy-row"><div class="copy-row-label">Problem Agitation</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.problemAgitation)}</div></div>
-          <div class="copy-row"><div class="copy-row-label">Moment of Realisation</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.momentOfRealisation)}</div></div>
-          <div class="copy-row"><div class="copy-row-label">Outcome</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.outcome)}</div></div>
-          <div class="copy-row"><div class="copy-row-label">Unique Mechanism</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.uniqueMechanism)}</div></div>
-          <div class="copy-row"><div class="copy-row-label">Social Proof</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.socialProof)}</div></div>
-          <div class="copy-row"><div class="copy-row-label">CTA</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.cta)}</div></div>
-        </div>
-      </div>
-      <div class="brief-section">
-        <div class="section-label">Static Ad Elements</div>
-        <div class="static-grid">
-          <div class="static-item" style="grid-column: 1 / -1;">
-            <div class="static-item-label">Image Direction</div>
-            <div class="static-item-text">${escapeHtml(b.staticAdElements.imageDirection)}</div>
-          </div>
-          <div class="static-item">
-            <div class="static-item-label">Text Overlay</div>
-            <div class="static-item-text" style="font-size:16px; font-weight:700; color:#fff;">${escapeHtml(b.staticAdElements.textOverlay)}</div>
-          </div>
-          <div class="static-item">
-            <div class="static-item-label">Headlines</div>
-            <div class="static-item-text">${(b.staticAdElements.headlines || []).map((h, i) => `<div style="margin-bottom:4px"><span style="color:#555;font-size:11px;">${i+1}.</span> ${escapeHtml(h)}</div>`).join('')}</div>
-          </div>
-          <div class="static-item" style="grid-column: 1 / -1;">
-            <div class="static-item-label">Primary Text</div>
-            <div class="static-item-text">${escapeHtml(b.staticAdElements.primaryText)}</div>
-          </div>
-        </div>
-      </div>
-      <div class="brief-section">
-        <div class="section-label">Higgsfield Image Prompt</div>
-        <div class="higgsfield-box">
-          <div class="higgsfield-text">${escapeHtml(b.higgsfieldPrompt)}</div>
-        </div>
-      </div>
-      <div class="brief-actions">
-        <button class="btn-copy" onclick="copyToClipboard(window.briefsData[${idx}].fullText, this)">Copy Full Brief</button>
-        <button class="btn-copy-prompt" onclick="copyToClipboard(window.briefsData[${idx}].higgsfieldText, this)">Copy Higgsfield Prompt</button>
-      </div>
-    </div>
+    <div class="brief-mini-higgsfield">🎨 ${higgsfieldPreview}</div>
+    <div class="brief-full">${fullHtml}</div>
   </div>`;
 }
 
-// Keep old renderBriefs for compatibility
-function renderBriefs(briefs) {
-  const out = document.getElementById('output');
-  out.innerHTML = `<div class="briefs-header" id="briefs-header"><h2>Generated Briefs</h2><span>${briefs.length} briefs · ${new Date().toLocaleTimeString()}</span></div>`;
-  window.briefsData = briefs.map(b => ({ fullText: buildBriefText(b), higgsfieldText: b.higgsfieldPrompt }));
-  briefs.forEach((b, i) => { out.insertAdjacentHTML('beforeend', renderSingleBrief(b, i)); });
+function toggleBriefMini(key) {
+  const el = document.getElementById(`mini-${key}`);
+  if (el) el.classList.toggle('open');
 }
 
-// Allow Enter key in single-line inputs to trigger generation
-document.addEventListener('keydown', e => {
-  if (e.key === 'Enter' && e.target.tagName === 'INPUT' && e.target.id !== 'clientFilter') {
-    startBriefs();
-  }
-});
+function renderBriefFull(b, key) {
+  return `
+    <div class="brief-section">
+      <div class="section-label">Narrative Framework</div>
+      <span class="framework-tag">${escapeHtml(b.narrativeFramework)}</span>
+    </div>
+    <div class="brief-section">
+      <div class="section-label">Hook</div>
+      <p class="hook-text">
+        <span class="hook-s1">${escapeHtml(b.hook?.sentence1 || '')}</span><br>
+        <span class="hook-s2">${escapeHtml(b.hook?.sentence2 || '')}</span>
+      </p>
+    </div>
+    <div class="brief-section">
+      <div class="section-label">Full Ad Copy</div>
+      <div class="copy-block">
+        <div class="copy-row"><div class="copy-row-label">Problem Agitation</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy?.problemAgitation || '')}</div></div>
+        <div class="copy-row"><div class="copy-row-label">Moment of Realisation</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy?.momentOfRealisation || '')}</div></div>
+        <div class="copy-row"><div class="copy-row-label">Outcome</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy?.outcome || '')}</div></div>
+        <div class="copy-row"><div class="copy-row-label">Unique Mechanism</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy?.uniqueMechanism || '')}</div></div>
+        <div class="copy-row"><div class="copy-row-label">Social Proof</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy?.socialProof || '')}</div></div>
+        <div class="copy-row"><div class="copy-row-label">CTA</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy?.cta || '')}</div></div>
+      </div>
+    </div>
+    <div class="brief-section">
+      <div class="section-label">Static Ad Elements</div>
+      <div class="static-grid">
+        <div class="static-item" style="grid-column:1/-1"><div class="static-item-label">Image Direction</div><div class="static-item-text">${escapeHtml(b.staticAdElements?.imageDirection || '')}</div></div>
+        <div class="static-item"><div class="static-item-label">Text Overlay</div><div class="static-item-text" style="font-size:14px;font-weight:700;color:#fff;">${escapeHtml(b.staticAdElements?.textOverlay || '')}</div></div>
+        <div class="static-item"><div class="static-item-label">Headlines</div><div class="static-item-text">${(b.staticAdElements?.headlines || []).map((h,i)=>`<div style="margin-bottom:3px"><span style="color:#555;font-size:10px;">${i+1}.</span> ${escapeHtml(h)}</div>`).join('')}</div></div>
+        <div class="static-item" style="grid-column:1/-1"><div class="static-item-label">Primary Text</div><div class="static-item-text">${escapeHtml(b.staticAdElements?.primaryText || '')}</div></div>
+      </div>
+    </div>
+    <div class="brief-section">
+      <div class="section-label">Higgsfield Image Prompt</div>
+      <div class="higgsfield-box"><div class="higgsfield-text">${escapeHtml(b.higgsfieldPrompt || '')}</div></div>
+    </div>
+    <div class="brief-actions">
+      <button class="btn-copy" onclick="copyToClipboard(window.__briefCache__['${key}'].fullText, this)">Copy Full Brief</button>
+      <button class="btn-copy-prompt" onclick="copyToClipboard(window.__briefCache__['${key}'].higgsfieldText, this)">Copy Higgsfield Prompt</button>
+    </div>`;
+}
 
-// ── Saved Briefs / Notion persistence ──────────────────────────────────────
+// ── Load from Notion on page start ───────────────────────────────────────────
 
-let savedBriefs = [];
-
-async function loadSavedBriefs(clientFilter) {
-  const histEl = document.getElementById('history-output');
-  histEl.innerHTML = '<div style="color:#444;font-size:13px;">Loading...</div>';
+async function loadSavedBriefs() {
   try {
-    const url = clientFilter
-      ? `/.netlify/functions/load-briefs?client=${encodeURIComponent(clientFilter)}`
-      : '/.netlify/functions/load-briefs';
-    const res = await fetch(url);
-    if (!res.ok) throw new Error('Failed to load');
-    savedBriefs = await res.json();
-    renderSavedBriefs(savedBriefs);
+    const res = await fetch('/.netlify/functions/load-briefs');
+    if (!res.ok) return;
+    const briefs = await res.json();
+    if (!briefs.length) return;
+
+    // Group by client
+    const grouped = {};
+    briefs.forEach(b => {
+      const name = b.clientName || 'Unknown';
+      if (!grouped[name]) grouped[name] = [];
+      grouped[name].push(b);
+    });
+
+    document.getElementById('emptyState').style.display = 'none';
+
+    Object.entries(grouped).forEach(([name, clientBriefs]) => {
+      // Create state
+      if (!companiesState[name]) {
+        companiesState[name] = {
+          fields: { businessName: name, industry: clientBriefs[0]?.industry || '' },
+          briefIndex: clientBriefs.length,
+          briefs: clientBriefs
+        };
+      }
+      // Create section
+      ensureCompanySection(name, companiesState[name].fields);
+      // Render cards
+      const slug = slugify(name);
+      const cardsEl = document.getElementById(`cards-${slug}`);
+      const countEl = document.getElementById(`count-${slug}`);
+      if (cardsEl) {
+        clientBriefs.forEach((b, i) => {
+          b.briefNumber = b.briefNumber || (i + 1);
+          const key = `${slug}-saved-${i}`;
+          cardsEl.insertAdjacentHTML('beforeend', renderBriefMini(b, key));
+        });
+      }
+      if (countEl) countEl.textContent = `${clientBriefs.length} brief${clientBriefs.length > 1 ? 's' : ''}`;
+    });
   } catch (e) {
-    histEl.innerHTML = '<div style="color:#555;font-size:13px;">Could not load saved briefs.</div>';
+    // fail silently on load
   }
 }
 
-function filterBriefs(value) {
-  clearTimeout(window._filterTimer);
-  window._filterTimer = setTimeout(() => loadSavedBriefs(value.trim() || null), 400);
-}
-
-function renderSavedBriefs(briefs) {
-  const histEl = document.getElementById('history-output');
-  if (!briefs.length) {
-    histEl.innerHTML = '<div style="color:#444;font-size:13px;">No saved briefs yet.</div>';
-    return;
-  }
-  // Give each brief a unique index offset so copy buttons don't clash with session briefs
-  const offset = 1000;
-  window.savedBriefsData = briefs.map(b => ({
-    fullText: buildBriefText(b),
-    higgsfieldText: b.higgsfieldPrompt
-  }));
-  let html = '';
-  briefs.forEach((b, i) => {
-    const date = b.createdTime ? new Date(b.createdTime).toLocaleDateString() : '';
-    const card = renderSingleBrief(b, i).replace(
-      /window\.briefsData\[(\d+)\]/g,
-      `window.savedBriefsData[$1]`
-    );
-    // Inject client + date badge into card header
-    html += card.replace(
-      '<div class="brief-header">',
-      `<div class="brief-header" style="flex-wrap:wrap;gap:6px;"><span style="font-size:11px;color:#555;width:100%;">${escapeHtml(b.clientName)} · ${date}</span>`
-    );
-  });
-  histEl.innerHTML = html;
-}
-
-// Load saved briefs on page load
 window.addEventListener('DOMContentLoaded', () => loadSavedBriefs());
 </script>
 </body>
