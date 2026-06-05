@@ -123,7 +123,7 @@
 
   <div class="form-card">
     <h2>Client Intake Form</h2>
-    <p class="subtitle">Fill in the client details below to generate 3 ad creative briefs.</p>
+    <p class="subtitle">Fill in the client details below to generate ad creative briefs one at a time.</p>
     
     <div class="form-grid">
       <div class="form-group">
@@ -179,7 +179,7 @@
       </div>
     </div>
 
-    <button class="generate-btn" id="generateBtn" onclick="generateBriefs()">
+    <button class="generate-btn" id="generateBtn" onclick="startBriefs()">
       Generate Creative Briefs →
     </button>
   </div>
@@ -199,16 +199,16 @@ ${KNOWLEDGE_BASE}
 === END DOCUMENTATION ===
 
 RULES:
-1. Generate exactly 3 ad creative briefs
-2. Cover all 5 angle types across the 6 briefs: Pain, Benefit, Objection Handling, Challenge, Identity (one angle type may appear twice if justified)
-3. Each brief must use a different narrative framework (cycle through: Problem-Solution, Before-After-Bridge, Myth-Truth)
+1. Generate exactly 1 ad creative brief for the specified angle type and narrative framework
+2. Follow the angle type and narrative framework passed in the user message exactly
+3. The hook must be exactly 2 sentences: Sentence 1 = Clarity (Subject + Action + Outcome), Sentence 2 = Curiosity/Contrast
 4. Hooks must be exactly 2 sentences: Sentence 1 = Clarity (Subject + Action + Outcome), Sentence 2 = Curiosity/Contrast
 5. Write at 6th grade reading level, use "you/your" not "I/me", active voice, no clichés
 6. Social proof must use the client's actual provided data — do not invent names or numbers if none provided
 7. CTAs must be direct and friction-free (Learn More for lead gen / Book Now for appointment-based)
 8. Higgsfield image prompts must be detailed, cinematic, and specific to the angle
 
-OUTPUT FORMAT — return a JSON array of 3 brief objects. Each object must have these exact keys:
+OUTPUT FORMAT — return a JSON array containing exactly 1 brief object. The object must have these exact keys:
 {
   "briefNumber": 1,
   "angleType": "Pain" | "Benefit" | "Objection" | "Challenge" | "Identity",
@@ -284,96 +284,21 @@ HIGGSFIELD IMAGE PROMPT:
 ${b.higgsfieldPrompt}`;
 }
 
-function renderBriefs(briefs) {
-  const out = document.getElementById('output');
-  let html = `<div class="briefs-header"><h2>Generated Briefs</h2><span>${briefs.length} briefs · ${new Date().toLocaleTimeString()}</span></div>`;
-  
-  briefs.forEach((b, i) => {
-    const badgeClass = getBadgeClass(b.angleType);
-    const fullText = buildBriefText(b);
-    const higgsfieldText = b.higgsfieldPrompt;
-    
-    html += `
-    <div class="brief-card">
-      <div class="brief-header">
-        <h3>Brief #${b.briefNumber} — ${escapeHtml(b.angleDescription)}</h3>
-        <span class="brief-badge ${badgeClass}">${escapeHtml(b.angleType)}</span>
-      </div>
-      <div class="brief-body">
-        
-        <div class="brief-section">
-          <div class="section-label">Narrative Framework</div>
-          <span class="framework-tag">${escapeHtml(b.narrativeFramework)}</span>
-        </div>
 
-        <div class="brief-section">
-          <div class="section-label">Hook</div>
-          <p class="hook-text">
-            <span class="hook-s1">${escapeHtml(b.hook.sentence1)}</span><br>
-            <span class="hook-s2">${escapeHtml(b.hook.sentence2)}</span>
-          </p>
-        </div>
+const ANGLE_SEQUENCE = [
+  { angleType: 'Pain',       narrativeFramework: 'Problem-Solution' },
+  { angleType: 'Benefit',    narrativeFramework: 'Before-After-Bridge' },
+  { angleType: 'Objection',  narrativeFramework: 'Myth-Truth' },
+  { angleType: 'Challenge',  narrativeFramework: 'Problem-Solution' },
+  { angleType: 'Identity',   narrativeFramework: 'Before-After-Bridge' },
+];
 
-        <div class="brief-section">
-          <div class="section-label">Full Ad Copy</div>
-          <div class="copy-block">
-            <div class="copy-row"><div class="copy-row-label">Problem Agitation</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.problemAgitation)}</div></div>
-            <div class="copy-row"><div class="copy-row-label">Moment of Realisation</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.momentOfRealisation)}</div></div>
-            <div class="copy-row"><div class="copy-row-label">Outcome</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.outcome)}</div></div>
-            <div class="copy-row"><div class="copy-row-label">Unique Mechanism</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.uniqueMechanism)}</div></div>
-            <div class="copy-row"><div class="copy-row-label">Social Proof</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.socialProof)}</div></div>
-            <div class="copy-row"><div class="copy-row-label">CTA</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.cta)}</div></div>
-          </div>
-        </div>
+let currentFields = null;
+let currentApiKey = null;
+let currentBriefIndex = 0;
+let allBriefs = [];
 
-        <div class="brief-section">
-          <div class="section-label">Static Ad Elements</div>
-          <div class="static-grid">
-            <div class="static-item" style="grid-column: 1 / -1;">
-              <div class="static-item-label">Image Direction</div>
-              <div class="static-item-text">${escapeHtml(b.staticAdElements.imageDirection)}</div>
-            </div>
-            <div class="static-item">
-              <div class="static-item-label">Text Overlay</div>
-              <div class="static-item-text" style="font-size:16px; font-weight:700; color:#fff;">${escapeHtml(b.staticAdElements.textOverlay)}</div>
-            </div>
-            <div class="static-item">
-              <div class="static-item-label">Headlines</div>
-              <div class="static-item-text">${(b.staticAdElements.headlines || []).map((h, i) => `<div style="margin-bottom:4px"><span style="color:#555;font-size:11px;">${i+1}.</span> ${escapeHtml(h)}</div>`).join('')}</div>
-            </div>
-            <div class="static-item" style="grid-column: 1 / -1;">
-              <div class="static-item-label">Primary Text</div>
-              <div class="static-item-text">${escapeHtml(b.staticAdElements.primaryText)}</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="brief-section">
-          <div class="section-label">Higgsfield Image Prompt</div>
-          <div class="higgsfield-box">
-            <div class="higgsfield-text">${escapeHtml(b.higgsfieldPrompt)}</div>
-          </div>
-        </div>
-
-        <div class="brief-actions">
-          <button class="btn-copy" id="copy-full-${i}" onclick="copyToClipboard(briefsData[${i}].fullText, this)">Copy Full Brief</button>
-          <button class="btn-copy-prompt" id="copy-prompt-${i}" onclick="copyToClipboard(briefsData[${i}].higgsfieldText, this)">Copy Higgsfield Prompt</button>
-        </div>
-
-      </div>
-    </div>`;
-  });
-  
-  out.innerHTML = html;
-  
-  // Store data for copy buttons
-  window.briefsData = briefs.map(b => ({
-    fullText: buildBriefText(b),
-    higgsfieldText: b.higgsfieldPrompt
-  }));
-}
-
-async function generateBriefs() {
+function startBriefs() {
   const apiKey = document.getElementById('apiKey').value.trim();
   if (!apiKey) { alert('Please enter your Anthropic API key.'); return; }
 
@@ -395,37 +320,63 @@ async function generateBriefs() {
   const missing = required.filter(f => !fields[f]);
   if (missing.length) { alert('Please fill in: ' + missing.join(', ')); return; }
 
+  currentFields = fields;
+  currentApiKey = apiKey;
+  currentBriefIndex = 0;
+  allBriefs = [];
+
+  document.getElementById('output').innerHTML = '';
+  generateNextBrief();
+}
+
+async function generateNextBrief() {
   const btn = document.getElementById('generateBtn');
+  const moreBtn = document.getElementById('moreBriefBtn');
   const out = document.getElementById('output');
-  btn.disabled = true;
-  btn.textContent = 'Generating...';
-  out.innerHTML = `<div class="loading"><div class="loading-spinner"></div><p>Generating 3 creative briefs using the IA framework...</p><p style="margin-top:8px;font-size:12px;color:#444;">This takes 30-60 seconds</p></div>`;
 
-  const userMessage = `Generate 3 Meta ad creative briefs for the following client:
+  const angle = ANGLE_SEQUENCE[currentBriefIndex % ANGLE_SEQUENCE.length];
+  const briefNum = currentBriefIndex + 1;
 
-Business Name: ${fields.businessName}
-Industry / Niche: ${fields.industry}
-Location: ${fields.location}
-What They Sell: ${fields.service}
-The Result Clients Get: ${fields.result}
-Social Proof: ${fields.socialProof || 'Not provided — do not invent specific names or numbers'}
-USPs / Differentiators: ${fields.usps || 'Not provided'}
-Customer Pain Points (in their words): ${fields.painPoints}
-Objections They Hear: ${fields.objections || 'Not provided'}
-Audience Description: ${fields.audience}
-Tone Preference: ${fields.tone || 'Not specified — use professional-casual'}
+  // Show loading card
+  const loadingId = `loading-${briefNum}`;
+  const loadingDiv = document.createElement('div');
+  loadingDiv.id = loadingId;
+  loadingDiv.className = 'loading';
+  loadingDiv.innerHTML = `<div class="loading-spinner"></div><p>Generating Brief #${briefNum} — ${angle.angleType} angle...</p>`;
+  out.appendChild(loadingDiv);
 
-Follow the IA framework strictly. Return only the JSON array.`;
+  if (btn) { btn.disabled = true; btn.textContent = 'Generating...'; }
+  if (moreBtn) moreBtn.style.display = 'none';
+
+  const userMessage = `Generate 1 Meta ad creative brief for the following client.
+
+Angle Type: ${angle.angleType}
+Narrative Framework: ${angle.narrativeFramework}
+Brief Number: ${briefNum}
+
+Business Name: ${currentFields.businessName}
+Industry / Niche: ${currentFields.industry}
+Location: ${currentFields.location}
+What They Sell: ${currentFields.service}
+The Result Clients Get: ${currentFields.result}
+Social Proof: ${currentFields.socialProof || 'Not provided — do not invent specific names or numbers'}
+USPs / Differentiators: ${currentFields.usps || 'Not provided'}
+Customer Pain Points (in their words): ${currentFields.painPoints}
+Objections They Hear: ${currentFields.objections || 'Not provided'}
+Audience Description: ${currentFields.audience}
+Tone Preference: ${currentFields.tone || 'Not specified — use professional-casual'}
+
+Follow the IA framework strictly. Return only the JSON array containing 1 brief object.`;
 
   try {
     const response = await fetch('/.netlify/functions/generate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        apiKey,
+        apiKey: currentApiKey,
         payload: {
           model: 'claude-sonnet-4-5',
-          max_tokens: 6000,
+          max_tokens: 2000,
           system: SYSTEM_PROMPT,
           messages: [{ role: 'user', content: userMessage }]
         }
@@ -439,23 +390,142 @@ Follow the IA framework strictly. Return only the JSON array.`;
 
     const data = await response.json();
     const rawText = data.content[0].text.trim();
-    
+
     let briefs;
     try {
-      // Handle if model wraps in markdown
       const jsonStr = rawText.startsWith('[') ? rawText : rawText.replace(/^```json?\n?/, '').replace(/\n?```$/, '');
       briefs = JSON.parse(jsonStr);
     } catch (e) {
-      throw new Error('Failed to parse response as JSON. Raw response: ' + rawText.slice(0, 200));
+      throw new Error('Failed to parse response. Raw: ' + rawText.slice(0, 200));
     }
 
-    renderBriefs(briefs);
+    const brief = briefs[0];
+    brief.briefNumber = briefNum;
+    allBriefs.push(brief);
+
+    // Replace loading div with rendered brief
+    const loadingEl = document.getElementById(loadingId);
+    const briefEl = document.createElement('div');
+    briefEl.innerHTML = renderSingleBrief(brief, allBriefs.length - 1);
+    if (loadingEl) loadingEl.replaceWith(briefEl.firstElementChild);
+
+    currentBriefIndex++;
+
+    // Update copy buttons data
+    window.briefsData = allBriefs.map(b => ({
+      fullText: buildBriefText(b),
+      higgsfieldText: b.higgsfieldPrompt
+    }));
+
+    // Show briefs header if first brief
+    if (currentBriefIndex === 1) {
+      const header = document.createElement('div');
+      header.id = 'briefs-header';
+      header.className = 'briefs-header';
+      out.prepend(header);
+    }
+    document.getElementById('briefs-header').innerHTML = `<h2>Generated Briefs</h2><span>${allBriefs.length} brief${allBriefs.length > 1 ? 's' : ''} · ${new Date().toLocaleTimeString()}</span>`;
+
+    // Show "Generate Another" button
+    showMoreButton();
+
   } catch (err) {
-    out.innerHTML = `<div class="error"><strong>Error:</strong> ${escapeHtml(err.message)}</div>`;
+    const loadingEl = document.getElementById(loadingId);
+    const errDiv = document.createElement('div');
+    errDiv.className = 'error';
+    errDiv.innerHTML = `<strong>Error:</strong> ${escapeHtml(err.message)}`;
+    if (loadingEl) loadingEl.replaceWith(errDiv);
   } finally {
-    btn.disabled = false;
-    btn.textContent = 'Generate Creative Briefs →';
+    if (btn) { btn.disabled = false; btn.textContent = 'Generate Creative Briefs →'; }
   }
+}
+
+function showMoreButton() {
+  let moreBtn = document.getElementById('moreBriefBtn');
+  if (!moreBtn) {
+    moreBtn = document.createElement('button');
+    moreBtn.id = 'moreBriefBtn';
+    moreBtn.className = 'generate-btn';
+    moreBtn.style.marginTop = '16px';
+    moreBtn.onclick = generateNextBrief;
+    document.getElementById('output').appendChild(moreBtn);
+  }
+  moreBtn.style.display = 'block';
+  moreBtn.textContent = `Generate Another Brief →`;
+}
+
+function renderSingleBrief(b, idx) {
+  const badgeClass = getBadgeClass(b.angleType);
+  return `
+  <div class="brief-card">
+    <div class="brief-header">
+      <h3>Brief #${b.briefNumber} — ${escapeHtml(b.angleDescription)}</h3>
+      <span class="brief-badge ${badgeClass}">${escapeHtml(b.angleType)}</span>
+    </div>
+    <div class="brief-body">
+      <div class="brief-section">
+        <div class="section-label">Narrative Framework</div>
+        <span class="framework-tag">${escapeHtml(b.narrativeFramework)}</span>
+      </div>
+      <div class="brief-section">
+        <div class="section-label">Hook</div>
+        <p class="hook-text">
+          <span class="hook-s1">${escapeHtml(b.hook.sentence1)}</span><br>
+          <span class="hook-s2">${escapeHtml(b.hook.sentence2)}</span>
+        </p>
+      </div>
+      <div class="brief-section">
+        <div class="section-label">Full Ad Copy</div>
+        <div class="copy-block">
+          <div class="copy-row"><div class="copy-row-label">Problem Agitation</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.problemAgitation)}</div></div>
+          <div class="copy-row"><div class="copy-row-label">Moment of Realisation</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.momentOfRealisation)}</div></div>
+          <div class="copy-row"><div class="copy-row-label">Outcome</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.outcome)}</div></div>
+          <div class="copy-row"><div class="copy-row-label">Unique Mechanism</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.uniqueMechanism)}</div></div>
+          <div class="copy-row"><div class="copy-row-label">Social Proof</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.socialProof)}</div></div>
+          <div class="copy-row"><div class="copy-row-label">CTA</div><div class="copy-row-text">${escapeHtml(b.fullAdCopy.cta)}</div></div>
+        </div>
+      </div>
+      <div class="brief-section">
+        <div class="section-label">Static Ad Elements</div>
+        <div class="static-grid">
+          <div class="static-item" style="grid-column: 1 / -1;">
+            <div class="static-item-label">Image Direction</div>
+            <div class="static-item-text">${escapeHtml(b.staticAdElements.imageDirection)}</div>
+          </div>
+          <div class="static-item">
+            <div class="static-item-label">Text Overlay</div>
+            <div class="static-item-text" style="font-size:16px; font-weight:700; color:#fff;">${escapeHtml(b.staticAdElements.textOverlay)}</div>
+          </div>
+          <div class="static-item">
+            <div class="static-item-label">Headlines</div>
+            <div class="static-item-text">${(b.staticAdElements.headlines || []).map((h, i) => `<div style="margin-bottom:4px"><span style="color:#555;font-size:11px;">${i+1}.</span> ${escapeHtml(h)}</div>`).join('')}</div>
+          </div>
+          <div class="static-item" style="grid-column: 1 / -1;">
+            <div class="static-item-label">Primary Text</div>
+            <div class="static-item-text">${escapeHtml(b.staticAdElements.primaryText)}</div>
+          </div>
+        </div>
+      </div>
+      <div class="brief-section">
+        <div class="section-label">Higgsfield Image Prompt</div>
+        <div class="higgsfield-box">
+          <div class="higgsfield-text">${escapeHtml(b.higgsfieldPrompt)}</div>
+        </div>
+      </div>
+      <div class="brief-actions">
+        <button class="btn-copy" onclick="copyToClipboard(window.briefsData[${idx}].fullText, this)">Copy Full Brief</button>
+        <button class="btn-copy-prompt" onclick="copyToClipboard(window.briefsData[${idx}].higgsfieldText, this)">Copy Higgsfield Prompt</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+// Keep old renderBriefs for compatibility
+function renderBriefs(briefs) {
+  const out = document.getElementById('output');
+  out.innerHTML = `<div class="briefs-header" id="briefs-header"><h2>Generated Briefs</h2><span>${briefs.length} briefs · ${new Date().toLocaleTimeString()}</span></div>`;
+  window.briefsData = briefs.map(b => ({ fullText: buildBriefText(b), higgsfieldText: b.higgsfieldPrompt }));
+  briefs.forEach((b, i) => { out.insertAdjacentHTML('beforeend', renderSingleBrief(b, i)); });
 }
 
 // Allow Enter key in single-line inputs to trigger generation
