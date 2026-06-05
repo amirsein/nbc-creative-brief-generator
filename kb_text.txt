@@ -1,0 +1,1621 @@
+
+
+=== SOURCE: (IA) Video 1 - Meta Ad Methodology.docx.pdf ===
+Module 3 - Modern Meta Methodology
+Click here for Google Doc (Click File > Make a Copy)
+Introduction ▶
+Welcome to Module 3 - Creating Winning Ads.
+In this module we are going to take a deep dive into the modern way of running Meta ads.
+Whether you’re brand new to Meta Ads or you’ve run campaigns before, this module will show
+you the approach you should be taking to consistently get results in the current Meta ecosystem.
+We’ll move away from outdated ideas around heavy targeting and focus on what really matters
+now.
+Creative, messaging, and how the algorithm responds to your ads.
+By the end of this module, you’ll understand how to think about ad creation, testing, and iteration
+in a way that aligns with how Meta delivers ads today and not outdated methods you’ve likely
+seen or learnt before.
+Modern Meta ⚡
+In this video we’re going to talk about how Meta Ads actually work today and why the biggest
+driver of performance is no longer targeting, but creative.
+A lot of advertisers still approach Meta the way it worked years ago, focusing heavily on
+interests, audiences, and complex targeting setups.
+The reality is that Meta has changed.
+Due to privacy updates, data restrictions, and the scale Meta now operates at, the platform
+relies far more on its algorithm to decide who sees your ads.
+Instead of you telling Meta exactly who to target, Meta now learns who responds to your ads
+by analysing how people interact with your creative.
+This means your ads themselves play the biggest role in determining performance.
+Creative Targeting 🧱
+To understand the way Meta operates today we first need to understand where it came from
+and how it has developed.
+In the past Meta relied heavily on audience targeting to decide who should see your ads.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Media buyers would build campaigns with multiple ad sets, each one targeting a different
+interest, demographic, or lookalike audience.
+The goal was to find small pockets of people who were likely to convert by narrowing
+targeting as much as possible.
+Most of the testing happened at the ad set level and not the creative level.
+The same ads were often duplicated across multiple ad sets, with the only variable being the
+audience.
+If performance was poor, the assumption was that the targeting was wrong, not the ad.
+This approach worked when Meta had access to far more user-level data and targeting
+signals.
+This structure also came with many downsides.
+• Slow learning due to fragmented audiences
+• Budget spread thin across many ad sets
+• Limited creative testing
+• Heavy manual optimisation
+As privacy changes reduced the effectiveness of interest and demographic targeting, this
+structure became less reliable.
+Meta could no longer depend on narrow audience definitions to drive performance.
+Because of this Meta had to come up with a new way to drive ad performance so that it
+could still offer a reliable service to advertisers.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Instead of targeting people directly, Meta started learning who to show ads to based on how
+people responded to the creative itself.
+Creative is now the primary driver of Meta ad performance.
+What Do We Mean By Creative 🖊📹🖼
+Creative is a term you will hear a lot when it comes to ads and it’s really important we clarify
+what we actually mean by this.
+It’s not just the visual elements of an ad and how it looks and there are a number of
+components that make an ad creative.
+Creative is the full message being communicated to the person seeing the ad.
+Meta doesn’t just analyse whether someone watched a video or clicked an image.
+It analyses how people respond to the idea being presented.
+Your creative is going to be made up of several elements working together.
+• The hook
+The first line, opening frame, or visual that stops the scroll.
+• The angle
+The perspective you’re taking on the problem, desire, or opportunity.
+Different angles attract different types of people.
+• The message
+What you’re actually saying. The story, explanation, or promise being made.
+• The framing
+How the message is positioned. This could be educational, direct, emotional, logical,
+aspirational, or problem-focused.
+• The format
+Video, static image, UGC, talking head, screen recording, text-led, carousel.
+Different formats create different engagement patterns. In this module we will cover how to
+create winning ads across both video and static formats, including how to write copy and
+structure messaging for each.
+• The call to action
+What you’re asking someone to do next and how clearly that’s communicated.
+These are all elements that influence how people interact with your ad.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+We can have two ads that look really similar, but if the hook, angle or framing changes they
+can perform completely differently.
+This is why Meta can deliver these ads to completely different people.
+We’re not just showing people different visuals to see what gets people taking action.
+The algorithm is reacting to behaviour triggered by the different messaging.
+Understanding this is critical.
+Because when you change the creative, you’re not just changing how the ad looks. You’re
+changing who the algorithm learns to show it to.
+How Meta Uses Creative Signals to Find Buyers Today 🎣
+Meta’s ad delivery system is built to constantly learn and adjust based on how people
+respond to your creative.
+At a high level, Meta looks at ad performance and uses those signals to decide who should
+see your ads next.
+Every interaction sends information back to the system.
+This includes:
+• How quickly someone stops scrolling
+• How long they watch a video
+• Whether they engage with the ad
+• Whether they click
+• Whether they convert
+Meta is constantly looking at these signals and looking for patterns or user behaviour.
+If people respond well it can then increase delivery of that ad to similar users. Or, if people
+don’t respond well it can reduce delivery.
+This is constantly happening in the background and is the system Meta now uses to drive all
+ad performance.
+You will likely have heard this referred to as ‘andromeda’.
+Meta does not optimise around interests or demographics in the same way it used to.
+It optimises around how people respond to ads.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+- Your ad is the input.
+- User behaviour is the signal.
+- The algorithm is the decision-maker.
+This is why two ads in the same campaign can attract completely different types of people,
+even when targeting is identical.
+For example, one ad might attract people who respond to social proof and authority, while
+another attracts people who respond to speed and simplicity.
+Even with identical targeting, Meta will learn these patterns and deliver each ad to different
+subsets of users.
+The creative itself determines who the algorithm finds.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Creative fatigue, messaging shifts, and angle testing matter more than ever.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+When performance drops, it’s usually because the creative signals have weakened, not
+because the targeting is wrong.
+Creative fatigue isn’t just people getting bored. It’s the point where the signals your ad sends
+become weaker, causing Meta to reduce delivery.
+Understanding this changes how you approach testing, scaling, and optimisation.
+And it’s the foundation for everything else we’re going to cover in this module.
+AI Driven targeting ⚙
+Meta has been gradually bringing in new AI tools into its system for a while now.
+This includes things like:
+- Adv+ campaigns
+- Ad level AI tools
+- AI bid adjustments
+These tools have all been designed with Meta new ways of learning in mind.
+Each one gives the algorithm more freedom to find different pools of people and learn about
+where your ads will perform best.
+When you heavily restrict targeting, you limit the number of people Meta can test your ads
+against.
+This slows learning and makes it harder for the algorithm to find patterns.
+Broad audiences allow Meta to observe how different types of people respond to your
+creative and quickly adjust delivery based on real behaviour.
+Instead of pre-filtering people with interests or demographics, you let the algorithm do the
+filtering for you.
+Your ad is the filter.
+If your ad and creative is strong you will naturally attract the right audience and repel the
+wrong one.
+When targeting is too narrow:
+• Meta has less data to work with
+• Learning takes longer
+• Performance becomes unstable
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+• Scaling becomes harder
+When targeting is broader:
+• Meta can test faster
+• Patterns emerge more clearly
+• Winning creatives are identified sooner
+• Scaling is smoother
+However, we can still use some targeting elements when they are relevant.
+For instance we might need to exclude certain age ranges if we are selling a product or
+service that isn't suitable.
+Think of your audience targeting as who can see your ad.
+Think of your creative determining who will see the ad.
+You can use audiences as guardrails
+Your creative is the lever.
+Your key to success with Meta is now going to be around:
+- Volume
+- Variation
+- Testing
+New Account Structure 🧱
+Account structure is now focused around:
+- Fewer adsets
+- Broader targeting
+- More creative variations
+- Testing takes place at ad level not audience level.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+What’s Next ⏯
+Now that you understand why creative drives performance on Meta, you have the foundation
+for everything else in this module. Creative is the input. Behaviour is the signal. The
+algorithm is the decision-maker. Every lesson from here builds on that.
+In the next video we are going to break down ad angles. You will learn what an angle is, why
+different angles attract different people, and how to use them as the strategic foundation for
+all your creative testing.
+You’ll learn how to think about angles, how to structure creative testing around them, and
+why testing angles is far more effective than testing audiences.
+This is going to be the core of your creative strategy.
+Everything we’ve covered in this video sets the foundation for how you’ll approach ad
+creation, testing, and iteration moving forward.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+
+
+=== SOURCE: (IA) Video 2 - Ad Angles (1).docx.pdf ===
+Module 3 - Ad Angles
+Click here for Google Doc (Click File > Make a Copy)
+Introduction ▶
+In this video we are going to talk about Ad Angles.
+An angle is all about framing the same offer in different ways, speaking to different emotions and
+triggering different behaviours.
+If our creative is how we target different audiences, then our ad angle is how we tell Meta who to
+look for.
+Different types of angles attract different types of people and this is crucial with Meta’s focus on
+creative targeting.
+I'm going to teach you what an ad angle actually is, how to think about angles strategically, and
+how to use them to structure your creative testing.
+My goal is to get you creating ads with intent and purpose and move away from random testing.
+By the end of this video you should be able to break down any offer into multiple angles and
+understand how to use them to drive performance on Meta.
+What Is An Ad Angle? 📐
+An angle is the specific way you present your offer, message or idea inside an ad.
+We’re not talking about the product or the format here, but specifically the perspective you
+choose to present it from.
+Any product or service can be presented in multiple ways depending on what you choose to
+emphasise.
+It’s each of these presentations that is an angle.
+These angles are incredibly important as everybody is going to have different needs, desires
+and messaging that they resonate with.
+Let’s use a fitness coaching business as an example and imagine they are selling a 30 day
+body transformation package.
+There are multiple ways we can present this.
+- Speed > Get back in shape in 30 days without spending hours in the gym.
+- Simplicity > A simple fitness plan for busy people who hate complicated workouts.
+- Authority> The same system used by over 1,000 successful clients.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+- Enjoyment> Get in shape using this fun and addictive workout routine.
+- Benefit > Improve your body confidence with this workout routine.
+These could all use the same format or same offer.
+The thing that changes is the idea that is being communicated.
+This can completely change the type of person that is attracted.
+The outcome is the same but the mental entry point changes.
+Angles vs creatives 📐 🖼
+An angle is the idea
+A creative is how that idea is expressed
+One angle = Many creatives
+One Creative = Only one angle
+This also means that the same angle can be expressed as a video ad, a static image, or a
+carousel.
+The format changes. The core idea does not.
+This is important to understand because later in the module we will look at how to write and
+structure ads for both formats.
+Creating Ad Angles For Your offer 🖊
+When creating ad angles, we start by understanding the core problem our offer solves and
+the different ways people emotionally experience that problem.
+Rather than jumping straight into writing ads, we want to break our understanding down into
+a set of clear inputs we can use to build strong angles.
+These inputs act as ingredients. On their own they don’t create angles, but when combined
+they form clear ideas we can test.
+This gives us a structured way to approach ad creation instead of relying on guesswork or
+random testing.
+We can start by mapping these inputs and then work out how our specific offer fits into each
+one.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+- Pain Points 🚨
+These focus on a specific problem, frustration, or sticking point and they work by making the
+viewer feel understood.
+- Overweight
+- Don't like the way they look
+- Clothes don't fit me
+- Struggle to move
+- Benefits ✅
+These focus on a specific outcome the viewer is looking for. They work by showing what life
+looks like after the problem is solved.
+- More confidence
+- More energy
+- Wear smaller clothes size
+- Objection handling ❌
+These angles directly address common reasons people don’t buy and they work by
+removing mental barriers.
+- Don't have time
+- Too expensive
+- Need to be fit
+- Challenges ⚠
+Challenges are based on what someone has already tried and failed with.
+They are backward-looking and emotional and they acknowledge effort, frustration, and
+disappointment.
+- Followed diets that were too strict
+- Got results but they didnt last
+- Identity 🧔
+These angles focus on how someone sees themselves or wants to see themselves and work
+by aligning the offer with their identity.
+They can relate to someone's lifestyle, experience or values. We can also refer to what
+someone ‘should not be’.
+- busy professionals
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+- Not for extreme dieters
+Remember, angles are not audiences. Multiple audiences can respond to the same angle,
+and Meta will decide who responds based on the creative signals.
+Mapping Out Your Angles 🗺
+I’ve created a worksheet for you that's going to allow you to map out everything you need to
+create your own angles for your own offers.
+This is an awesome exercise you can actually include in your client onboarding to get them
+involved in the process.
+There’s also some sections in this worksheet that are going to help us gather other
+components we need for building our high performing creatives, including social proof and
+USPs.
+Prioritising angles 📊
+Not all angles are created equal and you will likely have more than you can realistically test
+in one go.
+You don't need to test everything at once and you’ll need to work out what to test first.
+We can prioritise the order to test them using 3 simple filters.
+1. Strength of the pain
+Start with angles that connect directly to a strong, emotionally charged pain point.
+If someone feels this problem regularly or it affects their confidence, energy, or daily life, it’s
+usually a good place to start.
+Strong pain = faster feedback.
+2. The amount of people it applies to
+Ask yourself how many people this angle could apply to.
+Broad angles tend to work best early on because they give Meta more room to find
+responders.
+Highly specific angles can work well later, but they are usually better tested after you’ve
+found something that performs at scale.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+3. How believable it is
+Prioritise angles that feel realistic and easy to accept.
+If an angle requires a big leap of faith, heavy explanation, or sounds too good to be true, it’s
+harder for people to engage with quickly.
+Clear, believable ideas usually outperform clever or extreme ones.
+When choosing your first angles to test:
+- Pick 5 angles that score highly across all three filters
+- Start with broad, obvious ideas before niche or complex ones
+- Save abstract or advanced angles for later rounds of testing
+We want to learn which angles meta responds to fastest and then we can build into more
+complex ideas from there.
+From our examples:
+“Fear of staying overweight because they don’t have accountability and finally having a
+system that keeps them consistent.”
+This fits all three well.
+- Being overweight is a strong pain
+- Accountability applies to nearly everyone
+- It’s believable as we have the mechanism to prove it.
+We might want to avoid talking about “beach bodies” as this may only apply to a smaller
+proportion of people who are going away or live near a beach.
+Remember, this isn't our hook or ad copy yet. We will work on the language and wording
+next.
+Summary ✔
+An angle is the specific perspective you choose to present your offer from. It is not the
+format, not the hook, and not the copy. It is the core idea.
+One angle can generate many creatives across many formats. One creative only ever
+expresses one angle.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+You build angles from five inputs: pain points, benefits, objection handling, challenges, and
+identity.
+Map your offer against all five, then prioritise based on strength of pain, breadth of
+applicability, and believability.
+Start with the angles that score highest across all three before moving to more specific or
+complex ideas.
+Remember: angles are not audiences. Meta decides who responds. Your job is to give it
+strong, clear ideas to work with.
+What’s Next ▶
+Now that you’ve mapped and prioritised your angles, you’ve done the strategic work.
+You know what ideas you want to test and why those ideas matter.
+The next step is turning those angles into something people actually stop and pay attention
+to.
+In the next video, we’re going to break down hooks.
+You’ll learn how to take a single angle and turn it into multiple hooks that grab attention, stop
+the scroll, and give Meta the signals it needs to find the right people.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+
+
+=== SOURCE: (IA) Video 3 - Writing Hooks That Catch (1).docx.pdf ===
+Module 3 - Writing Hooks That Catch
+Click here for Google Doc (Click File > Make a Copy)
+Introduction ►
+In this video I’m going to teach you all about hooks.
+A hook is the first thing someone sees or hears in your video ads, and it decides whether they
+stop scrolling or ignore you completely.
+This is usually going to be the first 1-2 lines of speech in your video ads but could also be the
+main title in a graphic, or first line or two of text in an ad depending on what format you are using.
+It doesn’t matter how good your offer is or how strong your angle is. If the hook doesn’t earn
+attention no one will see the rest of the ad.
+In this lesson I’m going to show you what a hook actually is, what its job is, and why most hooks
+fail.
+We’ll break down the difference between good hooks and bad hooks, how to avoid curiosity
+clickbait that attracts the wrong people, and the common mistakes that kill ad performance.
+I’ll also show you how to turn the ad angles you’ve already mapped out into clear, effective
+hooks, using simple formulas you can apply over and over again.
+The goal is to create hooks that immediately tell the right person, “this is for you”, and give Meta
+the clear signals it needs to find more people like them.
+By the end of this video, you should be able to look at any angle and confidently turn it into
+multiple hooks that catch attention and set your ads up for success.
+What Is A Hook 🎣
+Put simply: your hook is the opening of your ad and its job is to earn a few seconds of attention
+from the right person.
+It’s not your headline and it’s not about trying to be clever, shocking or entertaining.
+I want you to look at hooks as filters. A good hook doesn’t try to attract everyone. It tries to
+quickly attract the right person and repel everyone else.
+It quickly tells the viewer:
+- What this ad is about
+- Who it’s for
+- Why they should keep watching
+The hook is the most important part of your creative.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+If the hook does its job properly the right people stick around for the full ad.
+If it doesn’t they could potentially be scrolling past and the rest of the ad won’t have any chance
+to perform.
+Think of it like the cover of a book. It needs to catch the attention of the reader and give them an
+idea of what the book is about. If it doesn’t they won't open it and read it.
+The Job Of A Hook
+Hooks have two main jobs to achieve.
+- Clarity: The viewer to immediately understand what the ad is about
+- Curiosity: The viewer feels like this is relevant to them and worth their attention.
+If you have curiosity without clarity, people are confused.
+If you have clarity without curiosity, people are bored.
+By using a strong hook we balance both. It makes the viewer think:
+“This is about my problem.”
+“And this might actually help me.”
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Why Hooks Matter On Meta 💭
+Hooks are absolutely essential to ad performance on Meta.
+This is because Meta looks at how people respond to your ad in the first few seconds.
+- Who stops.
+- Who watches.
+- Who engages.
+- Who leaves immediately.
+Those early reactions tell Meta who your ad is relevant to and teaches it who to show your
+ads to next.
+This is why it's so important to make sure our Hooks are attracting the right people, and
+filtering out people we don't want.
+For instance, if we had a hook that was ‘clickbaity’ and drove a lot of curiosity but had no
+clarity we could have a lot of irrelevant clicks.
+This in turn provides bad feedback to the algorithm.
+In short:
+- Your angle decides who the ad is for.
+- Your hook decides whether they pay attention.
+If your hook is weak the angle never gets a chance.
+Common Hook Mistakes ❌
+Most hooks fail for one of four main reasons.
+If you can identify which one is happening then fixing it becomes really obvious.
+You don’t need to be clever, just keep it simple and avoid these four mistakes.
+1. Delay ⌛
+Delay happens when the hook takes too long to introduce what the ad is actually about.
+The first line is vague, emotional, or “warming up” instead of giving context.
+Examples of delay:
+“This is one of the craziest things I’ve ever seen…”
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+“You won’t believe what happened when…”
+These lines create curiosity, but they give the viewer no information to decide if they should
+keep watching.
+Lots of videos you see online suffer from this issue and now you are aware of it you will likely
+see it everywhere.
+On Meta, those first 1–2 seconds matter most. Every second without clarity causes people to
+scroll past.
+Why this kills performance:
+If the viewer doesn’t know what the video is about immediately, they can’t decide to opt in.
+Curiosity without context = uncertainty.
+Uncertainty = scrolling.
+How to fix it:
+Make sure you introduce the topic in the first sentence
+- Cut fluff.
+- Cut warm-ups
+- Increase your speed to value.
+Good examples:
+“If you’re struggling to lose weight, this is why it keeps coming back.”
+“Here are three simple ways to lose fat without living in the gym.”
+2. Confusion ❓
+What this looks like
+The hook introduces the topic, but the wording is unclear, overcomplicated, or awkward.
+The viewer hears the words, but doesn’t fully understand what you mean.
+This usually happens when:
+- Sentences are too long
+- Too many ideas are packed into one line
+- Passive or abstract language is used
+For example:
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+“This business owner doubled their appointments using a 30 day process that is impossible
+to learn unless you have a AI appointment setter like they did”
+Why this kills performance:
+If the viewer can’t quickly understand the hook, they can’t assess relevance.
+If they have to “think” to understand it, they won’t.
+Confusion creates friction, and friction kills retention.
+How to fix it:
+We need to make sure we are writing for clarity and not to be clever.
+- Use simple language
+- Use fewer words
+- Use active voice
+- Aim for a 6th-grade reading level
+Our example could now read something like:
+“This business owner doubled their monthly appointments in just 30 days using this AI
+appointment setter”
+Quick test:
+Read your hook in isolation.
+If it could be interpreted in more than one way, or it doesn't have immediate meaning.
+Rewrite it.
+3. Irrelevance 🤷
+Irrelevance happens when the hook is clear, but the viewer doesn’t feel confident the video
+is for them.
+They understand the topic, but they’re unsure if what’s coming next will actually help their
+situation.
+This often happens when hooks are framed around:
+“I” and “me”
+This happens when we focus on the creator’s story instead of the viewer’s problem or, use
+generic statements instead of specific pain points.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Why this kills performance:
+If the viewer doesn’t see themselves in the hook, they won’t invest attention.
+They ask themselves:
+“Is this actually relevant to me?”
+If the answer isn’t immediately “yes”, they scroll.
+How to fix it:
+Frame hooks around the viewer.
+- Use “you” and “your”
+- Call out the situation or problem directly
+- Make the expected value obvious
+Example:
+Instead of
+“I struggled with weight loss for years…”
+Use
+“If you struggle with weight loss…”
+4. Disinterest 🥱
+This happens when the hook is clear and relevant, but it doesn’t create enough curiosity to
+keep someone watching.
+The viewer understands what the video is about and who it’s for, but there’s no reason to
+stay.
+This usually happens when the hook:
+- States a fact without tension
+- Feels obvious or generic
+- Lacks contrast
+Why this kills performance:
+Clarity and relevance get attention.
+Curiosity keeps it.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Without curiosity, the viewer has no reason to continue.
+How to fix it:
+Create contrast.
+Contrast is the distance between:
+What they currently believe or have tried and a better, faster, or more effective alternative
+This can be:
+Stated contrast
+“Most people try strict diets, but this approach actually lasts.”
+Implied contrast
+“This is the easiest way to lose weight without burning out.”
+Contrast makes the viewer ask “Why is this different?”.
+That question keeps them watching.
+If we take our example:
+“This business owner doubled their monthly appointments in 30 days using an AI
+appointment setter.”
+It’s clear but it doesn't challenge anything yet. We can add contrast to make it stronger.
+Step 1 - We want to show the baseline belief.
+Business owners believe that to get more appointments, they need:
+- More ads
+- Better funnels
+- More manual follow-ups
+- More time chasing leads
+Step 2 - Introduce the contrast
+A = “run more ads”
+B = “AI appointment setter”
+We can state it directly:
+“Most business owners try to book more calls by running more ads.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+You can double your monthly appointments in 30 days using an AI appointment setter
+instead.”
+Or, we can imply it and leave them to fill in the gaps.
+“This business owner doubled their monthly appointments in 30 days, without running more
+ads by using an AI appointment setter.”
+What’s happening here:
+- You never explain the old way
+- The viewer fills in the gap themselves
+- Their brain asks: “Wait… then how?”
+The contrast is doing the work.
+Hook Structure ⚙
+In most high-performing hooks, contrast lives in the second sentence, not the first.
+Keep the first sentence's job as clarity and the second sentence's job as curiosity.
+If you try to do both at once, hooks often become confusing, wordy, or unbelievable.
+Tell me what it's about > Give me a reason to keep watching.
+To keep things simple you can use the following formula.
+Sentence 1 → Topic Clarity
+Tell the viewer exactly what the video is about.
+Sentence 2 → Contrast (Curiosity)
+Challenge what they already believe or introduce a better alternative.
+What’s Next ⏯
+In the next lesson, we’re going to take the angles you’ve already mapped out and turn them
+into hooks.
+I'm going to give you my simple step by step formula that you can reuse across every offer
+and every client so you always have a clear path from onboarding to execution.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Summary ✔
+A hook has one job: earn a few seconds of attention from the right person and give Meta the
+signal it needs to find more people like them.
+It is not about being clever or shocking. It is about clarity and curiosity working together —
+the first sentence tells the viewer what the ad is about, the second gives them a reason to
+keep watching.
+The four mistakes that kill hooks are delay, confusion, irrelevance, and disinterest. Delay
+buries the topic. Confusion forces the viewer to think. Irrelevance fails to signal who the ad is
+for. Disinterest gives no reason to stay. Fix any one of these and performance improves
+immediately.
+In the next lesson we are going to take everything here and put it into practice — turning the
+angles you have already mapped out into hooks using a simple, repeatable framework.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+
+
+=== SOURCE: (IA) Video 4 - Building Hooks From Angles (1).docx.pdf ===
+Module 3 - Building Hooks From Angles
+Click here for Google Doc (Click File > Make a Copy)
+Introduction ▶
+In the last lesson, we broke down what makes a hook work, why hooks matter on Meta, and the
+most common reasons they fail.
+At this point, you should understand what a good hook needs to do.
+In this video, we’re going to focus on how to actually build them.
+We are going to turn the ad angles you’ve already mapped out into clear, effective hooks you can
+write consistently, without guessing or trying to be clever.
+I’m going to give you a simple builder framework and worksheet you can use to convert any
+angle into multiple hooks on demand.
+The amazing thing about this is it gives you a clear path from onboarding > Angle Creation >
+Hooks so you will always have a clear plan of what to launch and test with every account you
+run.
+If you’ve ever stared at a blank page trying to “come up with a hook”, this lesson is going to
+remove that friction completely.
+Let’s get into it.
+Angles To Hooks Framework 🛠
+Every hook you create is going to start with your angle.
+You already have all the information you need and we’re not creating anything new here.
+We’re simply translating an angle into the first 1–2 lines of an ad.
+Think of it like this:
+Angle = the idea
+Hook = the first expression of that idea
+Our job is to take one angle and express it clearly, quickly, and with enough contrast to earn
+attention.
+To do that consistently, we’re going to use a small set of building blocks that every strong hook is
+made from.
+Components ⚙
+Every effective hook is built from the same core components.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+You won’t always use all of them, but you should always know which ones you’re using and why.
+The components are:
+- Subject
+- Action
+- Outcome / Result
+- Contrast
+- Proof (optional)
+- Time (optional)
+We can map any angle against these 6 core components to create multiple hooks.
+This means we aren’t guessing what to say but are able to assemble our hooks from the core
+inputs that come directly from our audience's psychological states.
+While you might be wondering if you could just pull hooks together from the angles sheet, the
+answer is yes you could, but with a downside.
+Using this structure is going to force clarity and contrast into your hooks and give you structure
+and discipline for building and testing them.
+Subject 🖊
+Who is this about? In most Meta ads, this is usually:
+- “You”
+- “Busy professionals”
+- “Business owners”
+- Or implied “people trying to lose weight”
+If the subject isn’t obvious, the hook won’t feel relevant.
+Action 💪
+What’s happening or changing? Must be a verb
+- Losing weight
+- Staying consistent
+- Following a system
+Every hook needs movement or something happening.
+Outcome / Result 📈
+What do they want?
+- Finally losing weight
+- Keeping it off
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+- Feeling in control
+Clear outcome = clear reason to watch.
+Contrast ➡
+Old baseline belief vs new reality
+- Trying and quitting vs accountability
+- Willpower vs system
+- Motivation vs structure
+This is where we build our contrast and make the hook compelling.
+Proof (optional) ✔
+- Clients / Track record
+- Experience “After doing X”
+- Volume
+- “Used by”
+- “again”
+Time (optional) ⌛
+How fast does this happen?
+- In 30 days
+- If I had 12 weeks
+- Right now
+- Before you build it
+Hook Assembly ⚓
+Here is my golden rule to follow when first assembling your hooks.
+Remember this is designed to keep things simple and effective, while working out which key
+messaging points resonate with your audience.
+We don't want to be too clever. Simplicity is key.
+Sentence 1 – Clarity ✅
+Subject + Action + Outcome.
+The first sentence tells the viewer exactly what the video is about and who it is for. Keep it
+direct and specific.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Sentence 2 – Curiosity 🤔
+Contrast (+ optional Proof or Time)
+The second sentence builds contrast and gives the viewer the information they need to decide
+whether to keep watching.
+Worksheet ✏
+Now we’re going to put this into practice.
+Now let's take a look at the worksheet and build some of these together using the previous
+angles we created. It’s designed to remove all guesswork from writing hooks.
+By the end of this worksheet, you should have 5–10 usable hooks per angle that you can
+immediately test.
+Now let me show you how to use it!
+Summary ✔
+Every hook starts with an angle. The framework in this lesson gives you a reliable way to
+translate any angle into multiple hook variations without guessing. Subject, action, outcome,
+contrast and these four components do the structural work. Proof and time add weight when
+you have them.
+Sentence 1 carries clarity. Sentence 2 carries curiosity. Keep them separate, keep them
+simple, and use the worksheet to build five to ten hooks per angle before you launch
+anything.
+The goal is not one great hook. The goal is a testing inventory that gives the algorithm
+enough signal to find the people who respond.
+In the next lesson we are going to move from hooks into the full ad structure and how to take
+someone from attention all the way through to a click.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+
+
+=== SOURCE: (IA) Video 5 - Creating Ad Scripts (1).docx.pdf ===
+Module 3 - Creating Ad Scripts & Ad Copy
+Click here for Google Doc (Click File > Make a Copy)
+Introduction ▶
+In the last few lessons, we’ve already done the hardest and most important work.
+We’ve broken down your angles and we’ve learned how to turn them into hooks that provide
+proper signals to meta.
+Now it’s time to take those hooks and turn them into full ads that convert.
+In this video we are going to focus on ad scripts and I am going to teach you how winning Meta
+ads are actually structured, and how to turn your existing hooks into clear, believable scripts.
+Think of your script as the bridge between attention and action.
+The hook earns the stop.
+The script builds understanding and belief.
+And together, they give Meta the signals it needs to find more of the right people.
+You’ll see how each structure works, when to use it, and how it guides someone from problem to
+solution without feeling salesy or forced.
+Then, instead of writing every script manually from scratch, I’ll show you how to use AI properly
+to do the heavy lifting.
+By the end of this video, you’ll have a repeatable process you can use across every account you
+run:
+Angles > hooks.
+Hooks > scripts.
+Scripts > ads.
+This will give you a full system you can use for any client account to plan, launch and find
+winning ads for their account without hours of manual work.
+Narrative Frameworks ✏
+There are many structures you can use for creating scripts.
+I'm going to give you three easy to follow structures that can be used across all your hooks
+to make multiple variations of your ads.
+These aren't set writing templates but frameworks for thinking.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+They follow very simple, repeatable structures that guide someone from attention to belief in
+a logical way.
+Framework 1: Problem → Solution 😟➡ 🙂
+This is the most direct framework, and it works best when the pain is already obvious.
+You start by clearly describing the problem the viewer is experiencing.
+You show them that you understand what’s frustrating, why it keeps happening, and what it’s
+costing them if nothing changes.
+Then you introduce the solution as a logical response to the problem you’ve just outlined.
+This framework works especially well when:
+- The audience already knows they have a problem
+- They’ve tried things before and failed
+- The angle is rooted in frustration, burnout, or inconsistency
+Framework 2: Before → After → Bridge 🙌
+This framework is all about contrast.
+You paint a clear picture of what life looks like before and focus on audience pain points.
+This could be the high amount of effort vs low reward, the struggle, the constant restarting.
+Then you show what life looks like after. This needs to be realistic and grounded. Not hypey.
+- More ease.
+- More consistency.
+- More progress
+Once the contrast is clear, you use the bridge to explain how that change happens.
+The bridge = your system, offer, or method.
+This framework works best when:
+- You want to show transformation without exaggeration
+- The angle is about sustainability or long-term change
+- You want the viewer to emotionally feel the difference
+The “after” needs to be believable, not an unachievable fantasy. We can also use social
+proof to help support this.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+If it feels realistic, it builds trust.
+Framework 3: Myth → Truth 🤥
+This framework works when the audience is stuck believing something that’s holding them
+back.
+You start by calling out a common belief. This could be something they’ve heard before or
+something they probably believe is true.
+Then you introduce the truth in a calm and clear way.
+You explain why the old belief doesn’t work, and what actually does.
+This framework works best when:
+- The angle challenges a common assumption
+- The audience is stuck repeating the same mistakes
+- You want to reposition how they think about the problem
+This is especially powerful when paired with education-based offers or systems.
+No matter which framework you use, the job of the script is always the same:
+- Build understanding
+- Build belief
+- Make the next step feel obvious
+The script does not need to convince everyone and it only needs to make sense to the right
+person.
+The Full Ad Structure ⚙
+The three frameworks above give you the narrative shape of an ad. Now we are going to
+add a complete sequential structure that turns that narrative into a full ad you can build
+element by element.
+This structure works across all three frameworks and can be applied to both video scripts
+and written copy for statics. Think of it as a blueprint. The frameworks tell you the story to
+tell. This structure tells you in what order to tell it.
+Hook ⚓
+The hook is the opening of the ad. Its job is to stop the scroll, signal who the ad is for, and
+create enough curiosity or clarity to earn the next few seconds of attention.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+You have already built your hooks using the angle and hook framework. This is where they
+go.
+Problem Agitation 🚨
+Once you have the viewer's attention, you deepen the pain.
+You are not just naming the problem. You are making the viewer feel the weight of it.
+How long have they had it? What has it cost them? What have they already tried that has not
+worked? What happens if nothing changes?
+This is the part of the ad that creates emotional investment.
+The viewer is not yet thinking about your solution. They are feeling the problem more clearly
+than they did before they saw the ad.
+That feeling is what makes everything that follows feel relevant and necessary.
+Moment of Realisation 😮
+Before you introduce the result, the viewer needs one more thing - clarity.
+Up to this point they are feeling the problem more intensely. But they may still believe the
+cause of the problem is something else such as their effort, their timing, the platform, or
+simply bad luck.
+This is where you introduce the insight.
+You reveal the misunderstanding, the hidden cause, or the flawed assumption that has been
+keeping the problem in place.
+The viewer suddenly sees the situation differently. The problem is no longer random or
+confusing. It has a clear reason behind it.
+That moment of understanding is powerful. When people understand why something is
+happening, they become far more open to hearing how it can be fixed.
+Now the outcome you describe does not feel like a sales pitch. It feels like the logical result
+of finally addressing the real problem.
+Outcome 📈
+Now you introduce the contrast.
+You paint a picture of what life looks like when the problem is solved. Not a fantasy. A
+believable, specific version of the result your offer produces.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+This is where you build desire.
+The more specific the outcome, the more believable it is.
+Vague promises create scepticism. Specific results create belief. "You will get more leads"
+does not do the same job as "Our clients average 34 qualified leads in their first 30 days."
+Unique Mechanism 🛠
+This is where you explain how the outcome is achieved.
+What is it about your offer, system, or method that makes the result possible? Why does it
+work when other things have not?
+The unique mechanism answers the question the viewer is already asking: okay, but how? It
+is not a features list.
+It is a simple, clear explanation of the core thing that makes your solution different and
+effective.
+If the viewer can understand why your approach works in two to three sentences, the next
+step feels logical rather than risky.
+Social Proof ⭐⭐⭐⭐⭐
+Social proof transfers belief from you to the people the viewer already trusts: other
+customers.
+Testimonials, case studies, client results, volume of customers, or named outcomes all serve
+the same purpose.
+They show that the result you described in the Outcome section has already happened for
+real people.
+Keep social proof specific and credible. A named result from a real client is more powerful
+than a vague endorsement.
+Where possible, match the proof to the angle — if your angle speaks to a specific type of
+person or problem, your social proof should reflect that same person and problem.
+Call To Action ☞
+The call to action tells the viewer exactly what to do next and removes any uncertainty about
+what happens when they do it. It should be direct, specific, and friction-free.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Weak CTAs create hesitation. "Find out more" is vague. "Click below to book your free
+30-minute strategy call" tells the viewer exactly what they are clicking, what they are getting,
+and what the commitment is. The simpler and more specific the next step, the more likely
+they are to take it.
+Creating Your Scripts ✏
+Now I'm going to show you exactly how we can build these.
+We’re going to take your offer, your angle and your hooks and feed them into a structured
+GPT setup that builds the script for you
+I’m going to show you exactly how to set this up so that:
+- The angle stays intact.
+- The hook stays intact.
+- The problem maps directly to your worksheet.
+- The final script actually sounds like a human explaining something clearly
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+
+
+=== SOURCE: (IA) Video 6 - Direct Response & Copy Psychology.docx.pdf ===
+Module 3 - Direct Response & Copy Psychology
+Click here for Google Doc (Click File > Make a Copy)
+Introduction ▶
+In this lesson we are going to go deeper on what makes our copy actually convert.
+Most ad copy fails but because it does not understand the psychology of the person reading
+it, and it leaves too much room for doubt.
+People scroll fast, think in shortcuts, and make decisions in seconds. We need to write copy
+to work with that, not against it.
+In this lesson we are going to cover two things that will immediately improve the quality of
+everything you write.
+1 - the psychological triggers that move people from attention to action.
+2 - the direct response principles that remove friction, ambiguity, and doubt from your copy
+so the right person has no reason not to click.
+By the end of this lesson you should be able to look at any piece of copy, identify exactly
+why it is underperforming, and know how to fix it.
+Psychological Triggers 🧠
+Psychological triggers are the specific mechanisms that move a person from passive interest
+to active intent.
+They do not manufacture desire.
+They amplify desire that already exists.
+When someone sees your ad, they may already want the outcome you are offering.
+The triggers are what make them feel the need to act now rather than scrolling past and
+forgetting about it.
+Social Proof ✅
+Social proof is one of the most powerful conversion tools available in ad copy. People are
+wired to trust the decisions of others.
+When someone sees that people like them have already achieved the result being promised,
+the believability of the offer increases dramatically.
+Effective social proof in ad copy is specific, not generic
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+You need to include real numbers, real outcomes, and where possible, real names or
+identifiable details.
+Compare these two examples.
+Weak: "Our clients love us and get great results."
+Strong: "Sarah, a wedding photographer from Leeds, booked 11 clients in her first 6 weeks."
+The second version is specific, grounded, and instantly more believable.
+When using social proof, always try to match it to the angle.
+If your angle speaks to a specific pain point or type of person, your proof should reflect that
+same person and that same result.
+Authority 📛
+Authority shows the reader that you are qualified to deliver the result you are promising.
+It answers the question they are already asking: why should I trust this person?
+Authority can come from many places.
+- Years of experience.
+- Number of clients served.
+- Featured in or recognised by known organisations.
+- Specific certifications or credentials.
+- Volume of results produced.
+The key is that it feels earned and verifiable, not claimed.
+"Industry-leading" is vague and means nothing.
+"We have helped 1,400 agency owners across 14 countries" is quantifiable.
+Use authority sparingly and specifically.
+One or two credibility signals placed in the right moment of the copy are more effective than
+a paragraph of credentials that feels like a CV.
+Urgency ⚡
+Urgency creates a reason to act now rather than later. Without it, interested viewers intend to
+come back, and they rarely do.
+Default human behaviour is to defer. Urgency disrupts that default.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Urgency works when it is real.
+Manufactured urgency like fake countdown timers, offers that are always expiring can
+damage trust the moment the reader notices it.
+Real urgency comes from genuine constraints:
+- Intake closing on a specific date,
+- Live cohort starting soon
+- Limited number of onboarding slots available this month.
+When you have genuine urgency, state it directly and specifically.
+"Doors close Friday" is more effective than "Limited time only."
+A concrete deadline is going to feel much more real to the reader.
+Scarcity ⚠
+Scarcity works on the same principle as urgency but applies to availability rather than time.
+When people believe something is limited, they assign it more value.
+When supply feels unlimited, the pressure to act disappears.
+Like urgency, scarcity must be real to be effective.
+If you take on a limited number of clients per month because you have a finite onboarding
+capacity, say so.
+"We only onboard 8 new clients per month" is credible and specific.
+"Spots are limited" is tired and unbelievable.
+Loss Aversion 💰
+People are more motivated by the prospect of losing something than they are by the
+prospect of gaining the same thing.
+This is one of the most well-documented principles in behavioural psychology and it has a
+direct application in ad copy.
+Most copy is written around what the reader will gain.
+Layer in what they will continue to lose by not acting;
+- time
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+- money,
+- clients,
+- competitive advantage
+This can significantly increase the emotional weight of your message.
+The problem agitation section of your ad structure is the natural place for this.
+Be careful with how you apply this. Loss framing that feels manipulative or exaggerated will
+damage trust.
+When the cost of inaction is real and relevant, stating it directly is honest and effective.
+When it is inflated, it reads as pressure and people disengage.
+Specificity 🎯
+Specific claims are more believable than general ones.
+This is a core function of how credibility works.
+Vague promises sound like marketing.
+Specific outcomes sound like evidence.
+Compare:
+"Generate more leads for your business"
+versus
+"Generate 30 to 50 qualified leads per month without cold calling."
+The second version creates a picture and sounds like something that has actually happened.
+It is also more useful to the reader because they can assess whether it is relevant to their
+situation.
+Wherever you make a claim in your copy, ask whether you can make it more specific.
+- Replace percentages with numbers.
+- Replace time ranges with specific timeframes.
+- Replace outcomes with the actual result.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Direct Response Principles (cid:0)
+Direct response copywriting is a discipline built around one objective: getting the reader to
+take a specific action.
+Every principle in this section is designed to help you build these into your own copy.
+When you apply them your copy will become faster to read, easier to act on, and harder to
+ignore.
+Remove All Ambiguity 💭
+If a sentence can be interpreted in more than one way, rewrite it.
+Ambiguity forces the reader to think, and the moment they have to think, they are deciding
+whether to continue. Most of the time, they do not.
+Every claim, every instruction, and every outcome in your copy should have exactly one
+meaning.
+Read each sentence and ask: could this be misread? Could someone understand this
+differently to how I intended it?
+If the answer is yes, simplify it.
+Write As If It Is 100% For This Reader 🖊
+Good ad copy does not say "this may work for you" or "some of our clients find that."
+It speaks directly and confidently to one person as though the entire ad was written
+specifically for them.
+When you write with these qualifications, it sounds like you are trying to avoid making a
+promise you cannot keep.
+The result is your copy sounds uncertain and unconvincing.
+Instead, write to the ideal reader as if the result you are describing is their guaranteed reality.
+Your angle has already done the work of attracting the right person so our ad copy needs to
+speak to them directly and with conviction.
+Use Quantitative Numbers 🔣
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Numbers do three things in copy.
+1. They replace vague language with something concrete.
+2. They signal that the claim is based on real data.
+3. They are faster to process than descriptive language.
+Go through every vague descriptor in your ad copy and replace each one with the most
+specific number you can honestly use.
+Instead of…
+"faster results"
+write:
+"results in 14 days."
+Instead of…
+"hundreds of clients"
+write:
+"over 400 clients."
+Instead of "significantly lower costs"
+write
+"cost per lead reduced by 40%."
+If you use too many of these vague terms; faster, better, more effective they add little value
+and can signal low credibility.
+Tell People Exactly What They Will Gain 💪
+Do not make the reader work out what they get from your offer.
+State it directly, specifically, and early.
+The outcome section of your ad structure is designed for this, but the principle applies
+across the whole ad.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Describe the outcome in terms the reader already uses to think about their problem.
+Don’t use internal language or industry terminology, but the exact words they would use to
+describe what they want.
+If your clients say "I want more booked calls" then write "more booked calls," not "increased
+pipeline velocity."
+Clarity Over Cleverness 🤯
+We need to make sure we are writing in a way that's easy for the reader to understand.
+Wordplay, metaphors, and indirect language all slow comprehension.
+In an environment where you have under two seconds to earn attention, anything that
+requires the reader to decode what you are actually trying to say is an issue.
+The best direct response copy is almost boring because it's so direct.
+It says exactly what it means in the simplest language available.
+If you find yourself proud of a line because it is clever, read it again and ask whether it is
+clear.
+Usually you will find you can make it shorter and more direct without losing anything.
+Use Active Voice 💬
+Active voice puts the subject first and the action second.
+It is direct, fast, and confident.
+Passive voice reverses this and produces copy that feels slow, weak, and uncertain.
+Passive: "Results have been achieved by our clients across multiple industries."
+Active: "Our clients get results across every industry we work in."
+A good way to check if there is an issue is to read your copy out loud.
+If a sentence sounds like it was written for a report, rewrite it in the most direct,
+conversational way possible.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Copy Review Checklist 📋
+Before publishing any ad copy, run it against this checklist.
+1. Does the hook immediately signal who this is for?
+2. Is every claim specific and quantified where possible?
+3. Have I removed every sentence that can be interpreted in more than one way?
+4. Am I speaking directly to one person or hedging for a crowd?
+5. Does the copy tell the reader exactly what they will gain and exactly what to do next?
+6. Is there at least one credibility signal; proof, authority, or a specific result?
+7. Have I removed every word that does not add value or impact?
+8. Does it read as fast and clearly out loud as it does on the page?
+If you can answer yes to all of these, the copy is ready to test.
+Summary ✅
+Psychological triggers amplify desire that already exists.
+Social proof transfers belief.
+Authority earns trust.
+Urgency and scarcity create a reason to act now.
+Loss aversion increases the emotional cost of inaction.
+Specificity makes every claim more credible.
+None of these work in isolation and the goal is to layer as many of these as possible into
+your ad copy so that they have a compound effect.
+These direct response principles remove every reason for the reader to hesitate.
+- Write without ambiguity.
+- Speak directly to one person. Use numbers.
+- State outcomes clearly.
+- Choose clarity over cleverness.
+- Write in active voice.
+These principles also apply to everything you write; video scripts, static ad copy, headlines,
+and primary text.
+In the next lesson I'm going to show you how to apply all of this to static ads specifically and
+look at how to write a copy for the format.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+
+
+=== SOURCE: (IA) Video 7 - Writing Copy For Static Ads.docx.pdf ===
+Module 3 - Writing Copy For Static Ads
+Click here for Google Doc (Click File > Make a Copy)
+Introduction ▶
+In the last two lessons, we covered hooks and scripts for video ads.
+Now we’re moving into static ads.
+This is where most people get it wrong.
+They either copy their video hooks directly into statics, which doesn’t work, or they rely on
+the image to do everything and treat the copy as an afterthought.
+Both approaches kill performance.
+Static ads are not a simplified version of video.
+They’re a completely different format with a different set of rules.
+- You don’t get time to explain.
+- You don’t get sequence.
+- You don’t get a second chance.
+The viewer sees everything at once and decides in under two seconds whether this is worth
+their attention.
+If your ad isn’t instantly clear, it gets ignored.
+In this lesson, we’re going to fix that.
+I’ll show you how static ads are actually consumed, what each element is responsible for,
+and how to build them properly so they work together instead of competing.
+We’ll break down:
+- Why most static ads fail
+- The five elements that make up a high-performing static
+- How to build the static hook using image, overlay, and headline
+- How to write primary text that actually gets read
+- How to write headlines that drive clicks instead of just describing your offer
+By the end of this lesson, you’ll be able to take the same angles you’ve already built and turn
+them into static ads that are clear, fast to understand, and built to convert.
+This is where we move from “good looking ads” to ads that actually perform.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+How Statics Are Consumed Differently To Video 🖼
+Unlike video ads when we are using statics we are unable to control the sequence in which
+the viewer consumes information.
+In a Video:
+The viewer sees the hook first.
+Then the body.
+Then the CTA.
+You guide them from attention → understanding → action, step by step.
+When we run statics we aren't able to control this.
+When someone scrolls past a static ad, they see everything at once.
+The image.
+The text overlay.
+The headline.
+The first line of the primary text.
+There is no sequence or build up. They scan the entire ad in under two seconds and decide:
+👉 “Do I understand this?”
+👉 “Is this for me?”
+👉 “Do I care?”
+If the answer isn’t immediately clear, they keep scrolling.
+Video gives you time to explain.
+Statics demand instant clarity.
+The Anatomy Of A Static Ad ⚙
+A static ad has five elements.
+If you don’t understand what each one is responsible for, you’ll either overload one part or
+leave performance on the table.
+Each element has a specific job and when they all do their job properly, the ad works.
+When one fails, the whole ad underperforms.
+In a video, the hook is a line.
+In statistics, the hook is a system.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Image + Overlay + Headline = the hook.
+Everything starts from the hook you have already created.
+We don't need to create anything new and can distribute our existing ideas across different
+elements.
+The 5 Elements 🔥
+1. The Image
+This is your scroll-stopper. It does the same job as the first 1–2 seconds of a video.
+Its role is simple:
+👉 Stop the scroll
+👉 Signal relevance
+👉 Represent the angle visually.
+That’s it. It doesn't need to explain everything.
+If your hook is about “going to the gym and not seeing results”, your image should show that
+situation.
+A good image makes the right person instantly think:
+“This is about me.”
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+2. Text Overlay (Optional)
+This is short copy placed on the image.
+Its job is to be instantly clear, specific, and easy to process.
+👉 Add clarity
+👉 Reinforce the angle
+👉 Support the overall hook
+Your overlay should be built from the same angle and hook you’ve already created.
+You’re not writing new messaging.
+You’re taking one part of the hook and expressing it in a way that can be understood in
+under one second.
+Example Hook:
+“If you’ve been going to the gym to lose weight and it hasn’t worked…
+here’s how 100+ people are getting consistent results from home in 4–6 weeks.”
+From this hook, we can extract:
+The problem → the gym isn’t working
+The audience → people trying to lose weight
+The contrast → gym vs home
+The result → consistent results
+Your overlay should take one of these and express it clearly.
+Not all of them. Just one.
+What to avoid:
+❌ “If you’ve been going to the gym to lose weight and it hasn’t worked…
+here’s how 100+ people are getting consistent results from home in 4–6 weeks.”
+- Too long.
+- Too heavy.
+- Not built for how statics are consumed.
+Stronger versions:
+✅ “You train 4x a week and still look the same?”
+✅ “Working out but not seeing any change?”
+✅ “Putting in the effort but nothing’s changing?”
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Each of these comes from the same hook but expresses a different part of it.
+When combined with the image and headline, the full idea becomes clear instantly.
+The hook is the idea.
+The overlay is one expression of that idea, compressed for speed.
+If your overlay could apply to any ad in your niche, it’s too generic.
+If it takes more than a second to read or understand, it’s too heavy.
+3. Headline
+The headline sits below the creative. This is one of the most important elements in a static
+ad and one of the most misused.
+A lot of people use the headline to describe the offer but it’s job is to push the click.
+In our statics system: Image + Overlay + Headline = Hook
+The headline is where you introduce the tension, contrast, or question that makes the viewer
+want to engage.
+We are not creating a new idea and your headline should be built from the same hook.
+You are taking another part of that same hook and expressing it in a way that makes the next
+step feel obvious.
+Example Hook:
+“If you’ve been going to the gym to lose weight and it hasn’t worked…
+here’s how 100+ people are getting consistent results from home in 4–6 weeks.”
+From this hook, we can extract:
+The problem → the gym isn’t working
+The contrast → gym vs home
+The result → consistent results
+The insight → what they’re doing isn’t working
+Example Headlines:
+“Why the gym isn’t working for fat loss”
+“Stop relying on the gym to lose weight”
+“How people are getting results without the gym”
+Each headline expresses a different part of the same idea.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+When combined with the image and overlay, the full message becomes clear instantly.
+What to avoid:
+❌ “Online Fitness Coaching Program”
+❌ “12 Week Transformation Plan”
+These describe the offer, but on cold/low intent audiences, they don’t create any reason to
+click.
+There’s no tension or contrast.
+For more product-aware audiences, this can be effective.
+If the viewer already:
+- Knows what they want
+- Is actively looking for a solution
+- Recognises the offer
+Then clarity can outperform curiosity.
+Your headline should match the awareness level.
+Cold audiences → use contrast, problems, tension
+Warmer audiences → use clarity, outcome, specificity
+Best Practice:
+The headline should make ignoring the ad feel wrong.
+Keep it short. 6–10 words.
+Make it specific.
+The goal is simple: Take the idea from your hook, and make the next step feel obvious.
+4. Primary Text
+We don't need to rewrite our main copy at this point. You have done this already in the
+previous lesson.
+You already have:
+- Your hook
+- Your script
+- Your structure
+Problem → Solution
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+Before → After → Bridge
+Myth → Truth
+For our statics we don't need to redo this and can use what we already have.
+We can use our full hook as our first line.
+Just make sure that it fits within the character limits meta gives and can all be seen before
+the ‘see more’ button.
+Sometimes we might need to condense it slightly.
+Then continue straight into your script. After the first line, everything else stays the same.
+Follow the same structure:
+Problem agitation
+Moment of realisation
+Outcome
+Mechanism
+Social proof
+Call to action
+The Difference With Statics
+Static copy is read, not watched so we need to make sure it's polished for easy reading.
+- Shorter sentences
+- Less filler
+- More direct
+The structure does not change.
+What to Avoid:
+❌ Writing completely new copy for statics
+❌ Changing the angle or message
+❌ Overcomplicating the first line
+5. Call To Action (CTA)
+Keep this simple and don’t overthink it. Your CTA should match the action you want:
+Learn More → lead gen
+Sign Up → lead form
+Shop Now → purchase
+Biggest Mistakes ⚠
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+The biggest mistake people make is trying to make one element do everything.
+- Image trying to explain the whole offer
+- Overlay trying to be clever
+- Headline repeating the same idea
+- Primary text carrying all the weight
+This can make the ad heavy, confusing and hard for viewers to comprehend easily.
+The Correct Way To Think About It 🧠
+Each element has one job:
+Image → Stop + signal
+Overlay → Clarify
+Headline → Create tension
+Primary text → Build belief
+CTA → Direct action
+When this happens the ad becomes easier to understand, easier to process and harder to
+ignore.
+Quick Test
+Look at your ad and ask:
+Is the image clear instantly?
+Does the overlay add clarity or noise?
+Does the headline create curiosity or just describe?
+Does the first line hit immediately?
+If any part is weak you should go back and correct it.
+The Static Hook System ⚓
+Because a static is consumed all at once, the hook is not a single element. It is the
+combination of the image, the text overlay, and the headline working as one unit.
+Think of it as a three-part system where each component has a specific role.
+The image stops the scroll and signals the angle. It should visually represent the problem,
+the outcome, or the transformation the ad is communicating.
+It does not need to be complicated. It needs to be immediately readable and relevant to the
+person you are trying to attract.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+The text overlay adds clarity to the image. It answers the question the viewer is already
+asking: what is this about? Keep it to a few words.
+Write it to be read in under one second. Avoid full sentences. Think of it as a label, not a line
+of copy.
+The headline delivers the contrast or the question.
+This is where you introduce the idea that makes the viewer want to keep reading. Use it to
+challenge what they already believe, highlight an unexpected result, or ask a direct question
+they cannot ignore.
+This is the element that creates forward momentum into the primary text.
+A simple way to think about the three parts together: the image says who this is for, the
+overlay says what it is about, and the headline gives them a reason to read more.
+Writing Primary Text For Statics ✏
+The primary text is where you build the case. The same three frameworks we used for video
+scripts (Problem to Solution, Before After Bridge, and Myth to Truth) apply here. The
+difference is in how you write them.
+Static copy is written to be read, not heard. This means;
+- Shorter sentences.
+- Simpler words.
+- No conversational filler.
+In a video script you can afford transitions and breathing room because the viewer is
+watching.
+In a static the viewer is reading at their own pace, often while scrolling, and you lose them
+the moment the copy becomes dense or effortful.
+The most important rule for primary text: lead with your strongest idea.
+The first line must do the most work. It is visible before the See More cut, which means it is
+often the only line that gets read.
+If that first line does not give the viewer a clear reason to keep reading, the rest of the copy
+is invisible.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+A strong opening line for static primary text identifies the specific person the ad is for, names
+their problem or desire directly, and does it in as few words as possible. The goal is to make
+the right person immediately think: this is about me.
+From there, the body of the primary text follows whichever framework matches the angle.
+Problem to Solution works well for pain-led angles where the viewer already knows they
+have the problem.
+Before After Bridge works well for transformation angles where you want them to feel the
+contrast emotionally.
+Myth to Truth works well for objection or identity angles where you need to shift a belief
+before they will consider the offer.
+Keep the overall length focused. Static primary text does not need to be long. Two to four
+short paragraphs is usually enough.
+End with a clear, direct call to action that tells the viewer exactly what to do next and why.
+Writing Headlines That Drive Clicks ✏
+The headline is the last thing the viewer sees before they decide whether to click. Most
+advertisers treat it as an afterthought, usually defaulting to their brand name or a vague
+description of the offer. This is a significant missed opportunity.
+A strong headline does one of three things. It delivers a clear, specific benefit that makes the
+offer immediately appealing.
+It asks a direct question the viewer cannot help but answer yes to. Or it creates a specific
+contrast that makes the offer feel like the obvious next step.
+Headlines need to be short. Meta displays them in a limited space and long headlines get
+truncated. Aim for six to ten words as a general rule. Every word should earn its place. If you
+can remove a word without losing the meaning, remove it.
+The headline and the primary text should not repeat each other. They are doing different
+jobs. The primary text builds the case. The headline closes it. Think of the headline as the
+last nudge before the click, not a summary of everything you just said.
+Just like with video hooks and angles, you should test multiple headline variations against
+the same creative. The image and primary text can stay the same while you test two or three
+different headlines. Small changes here can have a meaningful impact on CTR without
+requiring new creative production.
+Putting It Together ⚙
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+When briefing or writing a static ad, work through the five elements in this order.
+Start with the angle. Every decision flows from this. Know who you are targeting, what
+problem or desire you are speaking to, and what the core idea of the ad is before you write a
+single word.
+Brief the image. Describe what you need visually in terms of who it should feature, what it
+should communicate, and what emotion or situation it should convey. Be specific. A vague
+brief produces a vague image.
+Write the text overlay if needed. Three to seven words. Clarity over cleverness. It should
+make the image more immediately readable, not compete with it.
+Write the primary text. Lead with your strongest line. Follow the framework that suits the
+angle. End with a clear call to action. Keep it focused.
+Write two or three headline variations. Make each one do something specific: benefit,
+question, or contrast. Test them and let the data tell you which lands.
+Summary ✅
+Static ads are consumed differently to video. Everything is visible at once, which means
+every element has to work immediately and independently. There is no sequence to build in.
+Clarity and relevance have to be instant.
+The static hook is a system of three parts: the image stops the scroll, the text overlay adds
+clarity, and the headline creates the question or contrast that drives the click. These three
+elements work together as one unit.
+Primary text follows the same frameworks as video scripts but is written to be read rather
+than heard. Lead with your strongest line. Keep sentences short. End with a direct call to
+action.
+Headlines are where CTR on statics is won or lost. Treat them as a testing variable in their
+own right. Keep them short, specific, and focused on benefit, question, or contrast.
+© Imperium Acquisition - All rights reserved. Do not share, copy, reproduce or sell any part of this document unless you have written permission from Imperium Labs LTD. All infringements will be
+prosecuted. If you are the personal owner of the Imperium Labs LTD End User Licence then you may use it for your own use but not for any other purpose.
+
+
+=== SOURCE: (IA) Meta_Ad_Hooks_Worksheet [Master] - Template.csv ===
+Click File > Make a copy to save your own version of this worksheet,,,,,,,,
+Angle 1 ,,Angle 2,,Angle 3,,Angle 4,,Angle 5
+Copy and paste your angle here,,Copy and paste your angle here,,Copy and paste your angle here,,Copy and paste your angle here,,Copy and paste your angle here
+"Subject:
+Who the ad is about",,"Subject:
+Who the ad is about",,"Subject:
+Who the ad is about",,"Subject:
+Who the ad is about",,"Subject:
+Who the ad is about"
+"Action:
+What they are doing or trying to do",,"Action:
+What they are doing or trying to do",,"Action:
+What they are doing or trying to do",,"Action:
+What they are doing or trying to do",,"Action:
+What they are doing or trying to do"
+"Outcome / Result:
+The end state they want. Express this outcome as an emotional benefit when possible.",,"Outcome / Result:
+The end state they want",,"Outcome / Result:
+The end state they want",,"Outcome / Result:
+The end state they want",,"Outcome / Result:
+The end state they want"
+"Contrast:
+Why the old way fails / what makes this different",,"Contrast:
+Why the old way fails / what makes this different",,"Contrast:
+Why the old way fails / what makes this different",,"Contrast:
+Why the old way fails / what makes this different",,"Contrast:
+Why the old way fails / what makes this different"
+"Proof:
+Why they should believe this",,"Proof:
+Why they should believe this",,"Proof:
+Why they should believe this",,"Proof:
+Why they should believe this",,"Proof:
+Why they should believe this"
+"Time:
+Speed or timeframe",,"Time:
+Speed or timeframe",,"Time:
+Speed or timeframe",,"Time:
+Speed or timeframe",,"Time:
+Speed or timeframe"
+Hooks ,,Hooks ,,Hooks ,,Hooks ,,Hooks 
+"If you’re trying to [ACTION] but keep [OLD WAY / PROBLEM],
+this is exactly why it hasn’t worked.",,"If you’re trying to [ACTION] but keep [OLD WAY / PROBLEM],
+this is exactly why it hasn’t worked.",,"If you’re trying to [ACTION] but keep [OLD WAY / PROBLEM],
+this is exactly why it hasn’t worked.",,"If you’re trying to [ACTION] but keep [OLD WAY / PROBLEM],
+this is exactly why it hasn’t worked.",,"If you’re trying to [ACTION] but keep [OLD WAY / PROBLEM],
+this is exactly why it hasn’t worked."
+,,,,,,,,
+Here how you can get [DESIRED OUTCOME] without relying on [OLD WAY].,,Here how you can get [DESIRED OUTCOME] without relying on [OLD WAY].,,Here how you can get [DESIRED OUTCOME] without relying on [OLD WAY].,,Here how you can get [DESIRED OUTCOME] without relying on [OLD WAY].,,Here how you can get [DESIRED OUTCOME] without relying on [OLD WAY].
+,,,,,,,,
+You might think [COMMON BELIEF] leads to [OUTCOME] but that’s exactly why [PROBLEM CONTINUES].,,You might think [COMMON BELIEF] leads to [OUTCOME] but that’s exactly why [PROBLEM CONTINUES].,,You might think [COMMON BELIEF] leads to [OUTCOME] but that’s exactly why [PROBLEM CONTINUES].,,You might think [COMMON BELIEF] leads to [OUTCOME] but that’s exactly why [PROBLEM CONTINUES].,,You might think [COMMON BELIEF] leads to [OUTCOME] but that’s exactly why [PROBLEM CONTINUES].
+,,,,,,,,
+If you want to [ACTION] stop [OLD ACTION]. Do this instead if you want [OUTCOME] in [TIME].,,If you want to [ACTION] stop [OLD ACTION]. Do this instead if you want [OUTCOME] in [TIME].,,If you want to [ACTION] stop [OLD ACTION]. Do this instead if you want [OUTCOME] in [TIME].,,If you want to [ACTION] stop [OLD ACTION]. Do this instead if you want [OUTCOME] in [TIME].,,If you want to [ACTION] stop [OLD ACTION]. Do this instead if you want [OUTCOME] in [TIME].
+,,,,,,,,
+If [SUBJECT] have tried [ACTION] but keep failing. Heres how you can finally [OUTCOME] without [OLD WAY].,,If [SUBJECT] have tried [ACTION] but keep failing. Heres how you can finally [OUTCOME] without [OLD WAY].,,If [SUBJECT] have tried [ACTION] but keep failing. Heres how you can finally [OUTCOME] without [OLD WAY].,,If [SUBJECT] have tried [ACTION] but keep failing. Heres how you can finally [OUTCOME] without [OLD WAY].,,If [SUBJECT] have tried [ACTION] but keep failing. Heres how you can finally [OUTCOME] without [OLD WAY].
+,,,,,,,,
+If you’ve tried to [ACTION] by [OLD WAY] and it didn’t work. Here's [PROOF] are getting [OUTCOME] in [TIME].,,If you’ve tried to [ACTION] by [OLD WAY] and it didn’t work. Here's [PROOF] are getting [OUTCOME] in [TIME].,,If you’ve tried to [ACTION] by [OLD WAY] and it didn’t work. Here's [PROOF] are getting [OUTCOME] in [TIME].,,If you’ve tried to [ACTION] by [OLD WAY] and it didn’t work. Here's [PROOF] are getting [OUTCOME] in [TIME].,,If you’ve tried to [ACTION] by [OLD WAY] and it didn’t work. Here's [PROOF] are getting [OUTCOME] in [TIME].
+
+=== SOURCE: Copy of (IA) _Meta_Ad_Angles_Worksheet [Master] - Template.csv ===
+Click File > Make a copy to save your own version of this worksheet,,,,,,,,,,,,,,,,,,,,,,
+Core Offer,How It Works,What Makes It Different,Pain Points,Desired Outcome,Potential Audience,Identity / Lifestyle,Alternatives,Challenges,Objections,,Angle 1 ,Angle 2 ,Angle 3 ,Angle 4 ,Angle 5,Angle 6,Angle 7,Angle 8,Angle 9,Angle 10 ,,Final Angles
+Write your offer and it's core promise or outcome ,How do we get this result for them? Explain the mechanism.,How is this different from other alternatives?,What problems does your offer solve?,"In their own words, how would they describe success?","Who does the offer resonate with? 
+Write 1 idea per row. Keep it broad.","Their values, how they see themselves, or want to be seen.",What alternatives have they tried?,Why havent they succeeded before?,What might stop them from buying?,,Pain > Outcome,Paint point > Identity,Alternatives > Challenges,"Challenges > Desired Outcome 
+Reframes the outcome as achievable","Objections > Outcome
+Removes the objection from the outcome. ""You dont need X to get Y""","Objections > Challenges
+The thing that stopped them before is accounted for","Identity > Alternatives
+How the alternative doesnt fit with their identity",,,,,Write out your full list of angles below
+,,,,,1,,,,,,,,,,,,,,,,,
+,,,,,2,,,,,,,,,,,,,,,,,
+,,,,,3,,,,,,,,,,,,,,,,,
+,,,,,4,,,,,,,,,,,,,,,,,
+,,,,,5,,,,,,,,,,,,,,,,,
+,,,,,6,,,,,,,,,,,,,,,,,
+,,,,,7,,,,,,,,,,,,,,,,,
+,,,,,8,,,,,,,,,,,,,,,,,
+,,,,,9,,,,,,,,,,,,,,,,,
+,,,,,10,,,,,,,,,,,,,,,,,
+,,,,,11,,,,,,,,,,,,,,,,,
+,,,,,12,,,,,,,,,,,,,,,,,
+,,,,,13,,,,,,,,,,,,,,,,,
+,,,,,14,,,,,,,,,,,,,,,,,
+,,,,,15,,,,,,,,,,,,,,,,,
+,,,,,16,,,,,,,,,,,,,,,,,
+,,,,,17,,,,,,,,,,,,,,,,,
+,,,,,18,,,,,,,,,,,,,,,,,
+
+=== SOURCE: IA_Meta_Ad_Hooks_Worksheet [Master] - Template.csv ===
+Click File > Make a copy to save your own version of this worksheet,,,,,,,,
+Angle 1 ,,Angle 2,,Angle 3,,Angle 4,,Angle 5
+Copy and paste your angle here,,Copy and paste your angle here,,Copy and paste your angle here,,Copy and paste your angle here,,Copy and paste your angle here
+"Subject:
+Who the ad is about",hello,"Subject:
+Who the ad is about",,"Subject:
+Who the ad is about",,"Subject:
+Who the ad is about",,"Subject:
+Who the ad is about"
+"Action:
+What they are doing or trying to do",,"Action:
+What they are doing or trying to do",,"Action:
+What they are doing or trying to do",,"Action:
+What they are doing or trying to do",,"Action:
+What they are doing or trying to do"
+"Outcome / Result:
+The end state they want. Express this outcome as an emotional benefit when possible.",,"Outcome / Result:
+The end state they want",,"Outcome / Result:
+The end state they want",,"Outcome / Result:
+The end state they want",,"Outcome / Result:
+The end state they want"
+"Contrast:
+Why the old way fails / what makes this different",,"Contrast:
+Why the old way fails / what makes this different",,"Contrast:
+Why the old way fails / what makes this different",,"Contrast:
+Why the old way fails / what makes this different",,"Contrast:
+Why the old way fails / what makes this different"
+"Proof:
+Why they should believe this",,"Proof:
+Why they should believe this",,"Proof:
+Why they should believe this",,"Proof:
+Why they should believe this",,"Proof:
+Why they should believe this"
+"Time:
+Speed or timeframe",,"Time:
+Speed or timeframe",,"Time:
+Speed or timeframe",,"Time:
+Speed or timeframe",,"Time:
+Speed or timeframe"
+Hooks ,,Hooks ,,Hooks ,,Hooks ,,Hooks 
+"If you’re trying to [ACTION] but keep [OLD WAY / PROBLEM],
+this is exactly why it hasn’t worked.",,"If you’re trying to [ACTION] but keep [OLD WAY / PROBLEM],
+this is exactly why it hasn’t worked.",,"If you’re trying to [ACTION] but keep [OLD WAY / PROBLEM],
+this is exactly why it hasn’t worked.",,"If you’re trying to [ACTION] but keep [OLD WAY / PROBLEM],
+this is exactly why it hasn’t worked.",,"If you’re trying to [ACTION] but keep [OLD WAY / PROBLEM],
+this is exactly why it hasn’t worked."
+,,,,,,,,
+Here how you can get [DESIRED OUTCOME] without relying on [OLD WAY].,,Here how you can get [DESIRED OUTCOME] without relying on [OLD WAY].,,Here how you can get [DESIRED OUTCOME] without relying on [OLD WAY].,,Here how you can get [DESIRED OUTCOME] without relying on [OLD WAY].,,Here how you can get [DESIRED OUTCOME] without relying on [OLD WAY].
+,,,,,,,,
+You might think [COMMON BELIEF] leads to [OUTCOME] but that’s exactly why [PROBLEM CONTINUES].,,You might think [COMMON BELIEF] leads to [OUTCOME] but that’s exactly why [PROBLEM CONTINUES].,,You might think [COMMON BELIEF] leads to [OUTCOME] but that’s exactly why [PROBLEM CONTINUES].,,You might think [COMMON BELIEF] leads to [OUTCOME] but that’s exactly why [PROBLEM CONTINUES].,,You might think [COMMON BELIEF] leads to [OUTCOME] but that’s exactly why [PROBLEM CONTINUES].
+,,,,,,,,
+If you want to [ACTION] stop [OLD ACTION]. Do this instead if you want [OUTCOME] in [TIME].,,If you want to [ACTION] stop [OLD ACTION]. Do this instead if you want [OUTCOME] in [TIME].,,If you want to [ACTION] stop [OLD ACTION]. Do this instead if you want [OUTCOME] in [TIME].,,If you want to [ACTION] stop [OLD ACTION]. Do this instead if you want [OUTCOME] in [TIME].,,If you want to [ACTION] stop [OLD ACTION]. Do this instead if you want [OUTCOME] in [TIME].
+,,,,,,,,
+If [SUBJECT] have tried [ACTION] but keep failing. Heres how you can finally [OUTCOME] without [OLD WAY].,,If [SUBJECT] have tried [ACTION] but keep failing. Heres how you can finally [OUTCOME] without [OLD WAY].,,If [SUBJECT] have tried [ACTION] but keep failing. Heres how you can finally [OUTCOME] without [OLD WAY].,,If [SUBJECT] have tried [ACTION] but keep failing. Heres how you can finally [OUTCOME] without [OLD WAY].,,If [SUBJECT] have tried [ACTION] but keep failing. Heres how you can finally [OUTCOME] without [OLD WAY].
+,,,,,,,,
+If you’ve tried to [ACTION] by [OLD WAY] and it didn’t work. Here's [PROOF] are getting [OUTCOME] in [TIME].,,If you’ve tried to [ACTION] by [OLD WAY] and it didn’t work. Here's [PROOF] are getting [OUTCOME] in [TIME].,,If you’ve tried to [ACTION] by [OLD WAY] and it didn’t work. Here's [PROOF] are getting [OUTCOME] in [TIME].,,If you’ve tried to [ACTION] by [OLD WAY] and it didn’t work. Here's [PROOF] are getting [OUTCOME] in [TIME].,,If you’ve tried to [ACTION] by [OLD WAY] and it didn’t work. Here's [PROOF] are getting [OUTCOME] in [TIME].
