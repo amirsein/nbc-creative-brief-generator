@@ -55,6 +55,9 @@
   .company-generate-btn { background: #1a2a1a; color: #4ade80; border: 1px solid #2a4a2a; border-radius: 6px; padding: 7px 14px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.15s; white-space: nowrap; }
   .company-generate-btn:hover:not(:disabled) { background: #243424; }
   .company-generate-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .company-generate-all-btn { background: #1a1f2a; color: #93c5fd; border: 1px solid #2a3f5c; border-radius: 6px; padding: 7px 14px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+  .company-generate-all-btn:hover:not(:disabled) { background: #1e2a3b; }
+  .company-generate-all-btn:disabled { opacity: 0.4; cursor: not-allowed; }
 
   /* ── Brief mini card (collapsed) ── */
   .brief-mini { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; margin-bottom: 10px; overflow: hidden; transition: border-color 0.15s; }
@@ -459,6 +462,28 @@ function slugify(name) {
   return name.toLowerCase().replace(/[^a-z0-9]/g, '-');
 }
 
+async function generateAllBriefs(name) {
+  const state = companiesState[name];
+  if (!state) return;
+
+  const slug = slugify(name);
+  const genBtn = document.getElementById(`gen-btn-${slug}`);
+  const allBtn = document.getElementById(`gen-all-btn-${slug}`);
+
+  // Figure out how many are left (always generate remaining up to 5 total)
+  const totalAngles = ANGLE_SEQUENCE.length;
+  const remaining = totalAngles - (state.briefIndex % totalAngles);
+
+  if (allBtn) { allBtn.disabled = true; }
+  if (genBtn) { genBtn.disabled = true; }
+
+  for (let i = 0; i < remaining; i++) {
+    await generateNextBriefForCompany(name);
+  }
+
+  if (allBtn) { allBtn.disabled = false; }
+}
+
 function ensureCompanySection(name, fields) {
   const container = document.getElementById('companiesContainer');
   const slug = slugify(name);
@@ -477,6 +502,9 @@ function ensureCompanySection(name, fields) {
         <span class="company-count" id="count-${slug}">0 briefs</span>
         <button class="company-generate-btn" id="gen-btn-${slug}" onclick="generateNextBriefForCompany('${name.replace(/'/g, "\\'")}')">
           Generate Next Brief →
+        </button>
+        <button class="company-generate-all-btn" id="gen-all-btn-${slug}" onclick="generateAllBriefs('${name.replace(/'/g, "\\'")}')">
+          Generate All →
         </button>
       </div>
     </div>
