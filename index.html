@@ -69,8 +69,11 @@
   .brief-mini.open .brief-mini-chevron { transform: rotate(180deg); }
   .brief-mini-higgsfield { padding: 0 12px 12px; display: none; }
   .brief-mini:not(.open) .brief-mini-higgsfield { display: block; }
-  .btn-copy-higgsfield { background: #1e2a3b; color: #60a5fa; border: 1px solid #2a3f5c; border-radius: 5px; padding: 5px 10px; font-size: 11px; font-weight: 600; cursor: pointer; transition: all 0.15s; width: 100%; text-align: left; }
+  .btn-copy-higgsfield { background: #1e2a3b; color: #60a5fa; border: 1px solid #2a3f5c; border-radius: 5px; padding: 5px 10px; font-size: 11px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
   .btn-copy-higgsfield:hover { background: #243050; }
+  .btn-push-higgsfield { background: #2a2000; color: #f5c518; border: 1px solid #5a4a00; border-radius: 5px; padding: 5px 10px; font-size: 11px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+  .btn-push-higgsfield:hover { background: #3a2d00; }
+  .brief-mini-actions { display: flex; gap: 6px; padding: 0 12px 12px; }
 
   /* ── Full brief (expanded) ── */
   .brief-full { border-top: 1px solid #222; padding: 16px; display: none; }
@@ -531,8 +534,9 @@ function renderBriefMini(b, key) {
       <span class="brief-mini-hook">${hook1}</span>
       <span class="brief-mini-chevron">▼</span>
     </div>
-    <div class="brief-mini-higgsfield">
+    <div class="brief-mini-actions">
       <button class="btn-copy-higgsfield" onclick="event.stopPropagation(); copyToClipboard(window.__briefCache__['${key}'].higgsfieldText, this)">Copy Higgsfield Prompt</button>
+      <button class="btn-push-higgsfield" onclick="event.stopPropagation(); alert('Higgsfield not connected yet.')">Push to Higgsfield ↗</button>
     </div>
     <div class="brief-full">${fullHtml}</div>
   </div>`;
