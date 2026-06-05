@@ -47,6 +47,7 @@
 
   /* ── Company section ── */
   .company-section { margin-bottom: 32px; }
+  .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
   .company-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #2a2a2a; }
   .company-name { font-size: 16px; font-weight: 700; color: #fff; }
   .company-meta { font-size: 12px; color: #555; margin-top: 2px; }
@@ -63,12 +64,15 @@
   .brief-mini-hook { flex: 1; font-size: 13px; color: #ccc; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .brief-mini-chevron { font-size: 11px; color: #444; transition: transform 0.2s; }
   .brief-mini.open .brief-mini-chevron { transform: rotate(180deg); }
-  .brief-mini-higgsfield { padding: 0 16px 10px; font-size: 11px; color: #555; line-height: 1.5; display: none; font-style: italic; }
+  .brief-mini-higgsfield { padding: 0 12px 12px; display: none; }
   .brief-mini:not(.open) .brief-mini-higgsfield { display: block; }
+  .btn-copy-higgsfield { background: #1e2a3b; color: #60a5fa; border: 1px solid #2a3f5c; border-radius: 5px; padding: 5px 10px; font-size: 11px; font-weight: 600; cursor: pointer; transition: all 0.15s; width: 100%; text-align: left; }
+  .btn-copy-higgsfield:hover { background: #243050; }
 
   /* ── Full brief (expanded) ── */
   .brief-full { border-top: 1px solid #222; padding: 16px; display: none; }
   .brief-mini.open .brief-full { display: block; }
+  .brief-mini.open { grid-column: 1 / -1; }
   .brief-section { margin-bottom: 16px; }
   .brief-section:last-child { margin-bottom: 0; }
   .section-label { font-size: 10px; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
@@ -476,7 +480,7 @@ function ensureCompanySection(name, fields) {
         </button>
       </div>
     </div>
-    <div id="cards-${slug}"></div>
+    <div id="cards-${slug}" class="cards-grid"></div>
   `;
   container.prepend(section); // newest company on top
 }
@@ -499,7 +503,9 @@ function renderBriefMini(b, key) {
       <span class="brief-mini-hook">${hook1}</span>
       <span class="brief-mini-chevron">▼</span>
     </div>
-    <div class="brief-mini-higgsfield">🎨 ${higgsfieldPreview}</div>
+    <div class="brief-mini-higgsfield">
+      <button class="btn-copy-higgsfield" onclick="event.stopPropagation(); copyToClipboard(window.__briefCache__['${key}'].higgsfieldText, this)">Copy Higgsfield Prompt</button>
+    </div>
     <div class="brief-full">${fullHtml}</div>
   </div>`;
 }
