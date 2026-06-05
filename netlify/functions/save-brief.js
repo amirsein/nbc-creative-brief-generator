@@ -15,7 +15,7 @@ exports.handler = async (event) => {
     return { statusCode: 400, body: 'Invalid JSON' };
   }
 
-  const DATABASE_ID = '82b0e2c6-d762-4f71-974e-34a5f673e477';
+  const DATABASE_ID = '98392561-a919-4c16-aa3e-0d4a8326badc';
 
   const properties = {
     'Brief': {
