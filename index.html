@@ -79,6 +79,22 @@
   .brief-full { border-top: 1px solid #222; padding: 16px; display: none; }
   .brief-mini.open .brief-full { display: block; }
   .brief-mini.open { grid-column: 1 / -1; }
+
+  /* ── Media upload ── */
+  .brief-mini-thumb { width: 48px; height: 48px; border-radius: 5px; object-fit: cover; flex-shrink: 0; border: 1px solid #2a2a2a; display: none; }
+  .brief-mini-thumb.visible { display: block; }
+  .brief-mini-thumb-video { width: 48px; height: 48px; border-radius: 5px; object-fit: cover; flex-shrink: 0; border: 1px solid #2a2a2a; display: none; }
+  .brief-mini-thumb-video.visible { display: block; }
+  .media-section { border-top: 1px solid #1a1a1a; padding: 14px 0 0; margin-top: 14px; }
+  .media-section-label { font-size: 10px; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+  .media-dropzone { border: 1px dashed #2a2a2a; border-radius: 8px; padding: 20px; text-align: center; cursor: pointer; transition: border-color 0.15s; position: relative; }
+  .media-dropzone:hover, .media-dropzone.dragover { border-color: #2563eb; background: #0f1520; }
+  .media-dropzone input[type=file] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+  .media-dropzone p { font-size: 12px; color: #555; pointer-events: none; }
+  .media-dropzone span { font-size: 11px; color: #444; display: block; margin-top: 4px; pointer-events: none; }
+  .media-preview-full { margin-top: 10px; border-radius: 8px; overflow: hidden; position: relative; }
+  .media-preview-full img, .media-preview-full video { width: 100%; border-radius: 8px; display: block; max-height: 300px; object-fit: cover; }
+  .media-remove-btn { margin-top: 8px; background: #1a0f0f; border: 1px solid #5c1f1f; color: #f87171; border-radius: 5px; padding: 4px 10px; font-size: 11px; cursor: pointer; }
   .brief-section { margin-bottom: 16px; }
   .brief-section:last-child { margin-bottom: 0; }
   .section-label { font-size: 10px; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
@@ -532,6 +548,8 @@ function renderBriefMini(b, key) {
       <span class="brief-mini-num">#${b.briefNumber}</span>
       <span class="brief-badge ${badgeClass}">${escapeHtml(b.angleType)}</span>
       <span class="brief-mini-hook">${hook1}</span>
+      <img id="thumb-img-${key}" class="brief-mini-thumb" src="" alt="media" />
+      <video id="thumb-vid-${key}" class="brief-mini-thumb-video" src="" muted playsinline></video>
       <span class="brief-mini-chevron">▼</span>
     </div>
     <div class="brief-mini-actions">
@@ -587,6 +605,16 @@ function renderBriefFull(b, key) {
     <div class="brief-actions">
       <button class="btn-copy" onclick="copyToClipboard(window.__briefCache__['${key}'].fullText, this)">Copy Full Brief</button>
       <button class="btn-copy-prompt" onclick="copyToClipboard(window.__briefCache__['${key}'].higgsfieldText, this)">Copy Higgsfield Prompt</button>
+    </div>
+    <div class="media-section">
+      <div class="media-section-label">Creative Asset</div>
+      <div id="media-preview-${key}" class="media-preview-full" style="display:none"></div>
+      <div id="media-dropzone-${key}" class="media-dropzone" ondragover="event.preventDefault();this.classList.add('dragover')" ondragleave="this.classList.remove('dragover')" ondrop="handleMediaDrop(event,'${key}')">
+        <input type="file" accept="image/*,video/*" onchange="handleMediaUpload('${key}',this.files[0])" />
+        <p>Upload image or video</p>
+        <span>Click or drag & drop · PNG, JPG, MP4, MOV</span>
+      </div>
+      <button class="media-remove-btn" id="media-remove-${key}" style="display:none" onclick="removeMedia('${key}')">Remove</button>
     </div>`;
 }
 
@@ -629,6 +657,7 @@ async function loadSavedBriefs() {
           b.briefNumber = b.briefNumber || (i + 1);
           const key = `${slug}-saved-${i}`;
           cardsEl.insertAdjacentHTML('beforeend', renderBriefMini(b, key));
+          loadMediaForKey(key);
         });
       }
       if (countEl) countEl.textContent = `${clientBriefs.length} brief${clientBriefs.length > 1 ? 's' : ''}`;
@@ -639,6 +668,93 @@ async function loadSavedBriefs() {
 }
 
 window.addEventListener('DOMContentLoaded', () => loadSavedBriefs());
+
+// ── Media upload ──────────────────────────────────────────────────────────────
+
+function handleMediaDrop(event, key) {
+  event.preventDefault();
+  document.getElementById(`media-dropzone-${key}`)?.classList.remove('dragover');
+  const file = event.dataTransfer.files[0];
+  if (file) handleMediaUpload(key, file);
+}
+
+function handleMediaUpload(key, file) {
+  if (!file) return;
+  const isVideo = file.type.startsWith('video/');
+  const isImage = file.type.startsWith('image/');
+  if (!isVideo && !isImage) { alert('Please upload an image or video file.'); return; }
+
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    const dataUrl = e.target.result;
+    try {
+      localStorage.setItem(`media-${key}`, JSON.stringify({ dataUrl, type: isVideo ? 'video' : 'image' }));
+    } catch {
+      // localStorage full — still show in session
+    }
+    applyMedia(key, dataUrl, isVideo ? 'video' : 'image');
+  };
+  reader.readAsDataURL(file);
+}
+
+function applyMedia(key, dataUrl, type) {
+  const previewEl = document.getElementById(`media-preview-${key}`);
+  const dropzoneEl = document.getElementById(`media-dropzone-${key}`);
+  const removeEl = document.getElementById(`media-remove-${key}`);
+  const thumbImg = document.getElementById(`thumb-img-${key}`);
+  const thumbVid = document.getElementById(`thumb-vid-${key}`);
+
+  if (previewEl) {
+    previewEl.style.display = 'block';
+    previewEl.innerHTML = type === 'video'
+      ? `<video src="${dataUrl}" controls muted playsinline style="width:100%;border-radius:8px;max-height:300px;object-fit:cover"></video>`
+      : `<img src="${dataUrl}" alt="creative asset" style="width:100%;border-radius:8px;max-height:300px;object-fit:cover" />`;
+  }
+  if (dropzoneEl) dropzoneEl.style.display = 'none';
+  if (removeEl) removeEl.style.display = 'inline-block';
+
+  // Thumbnail on collapsed card
+  if (type === 'image' && thumbImg) {
+    thumbImg.src = dataUrl;
+    thumbImg.classList.add('visible');
+    if (thumbVid) thumbVid.classList.remove('visible');
+  } else if (type === 'video' && thumbVid) {
+    thumbVid.src = dataUrl;
+    thumbVid.classList.add('visible');
+    if (thumbImg) thumbImg.classList.remove('visible');
+  }
+}
+
+function removeMedia(key) {
+  localStorage.removeItem(`media-${key}`);
+  const previewEl = document.getElementById(`media-preview-${key}`);
+  const dropzoneEl = document.getElementById(`media-dropzone-${key}`);
+  const removeEl = document.getElementById(`media-remove-${key}`);
+  const thumbImg = document.getElementById(`thumb-img-${key}`);
+  const thumbVid = document.getElementById(`thumb-vid-${key}`);
+  if (previewEl) { previewEl.style.display = 'none'; previewEl.innerHTML = ''; }
+  if (dropzoneEl) dropzoneEl.style.display = 'block';
+  if (removeEl) removeEl.style.display = 'none';
+  if (thumbImg) { thumbImg.src = ''; thumbImg.classList.remove('visible'); }
+  if (thumbVid) { thumbVid.src = ''; thumbVid.classList.remove('visible'); }
+}
+
+function loadMediaForKey(key) {
+  try {
+    const stored = localStorage.getItem(`media-${key}`);
+    if (stored) {
+      const { dataUrl, type } = JSON.parse(stored);
+      applyMedia(key, dataUrl, type);
+    }
+  } catch {}
+}
+
+// Patch toggleBriefMini to load media when card opens
+const _origToggle = toggleBriefMini;
+toggleBriefMini = function(key) {
+  _origToggle(key);
+  loadMediaForKey(key);
+};
 </script>
 </body>
 </html>
